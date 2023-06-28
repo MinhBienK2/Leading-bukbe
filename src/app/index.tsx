@@ -17,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import { useUserSlice } from 'store/slice/user';
 import LayoutDefault from './layouts/LayoutDashboard';
 import PublicRouter from './routers/PublicRouter';
+import { HomePage } from './pages/HomePage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -30,7 +31,9 @@ export function App() {
 
       <Routes>
         <Route path="/" element={<PublicRouter />}>
-          <Route path="dashboard" element={<LayoutDefault />}></Route>
+          <Route element={<LayoutDefault />}>
+            <Route path="/" element={<HomePage />} />
+          </Route>
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

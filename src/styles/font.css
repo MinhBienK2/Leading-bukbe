@@ -1,10 +1,25 @@
 @font-face {
-  font-family: 'Intel Clear';
-  src: local('IntelClearRegular'), url('../assets/fonts/IntelClear_Rg.ttf') format('truetype');
+  font-family: 'Mulish';
+  src: local('MulishRegular'),
+    url('../assets/fonts/Mulish-Regular.ttf') format('truetype');
   font-weight: 400;
 }
+
 @font-face {
-  font-family: 'Intel Clear Bold';
-  src: local('IntelClearBold'), url('../assets/fonts/IntelClear_Bd.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'Mulish Medium';
+  src: local('MulishMedium'),
+    url('../assets/fonts/Mulish-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mulish SemiBold';
+  src: local('MulishSemiBold'), url('../assets/fonts/Mulish-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Mulish ExtraBold';
+  src: local('MulishExtraBold'), url('../assets/fonts/Mulish-ExtraBold.ttf');
+  font-weight: 800;
 }

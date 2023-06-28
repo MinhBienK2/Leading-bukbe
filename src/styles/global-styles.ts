@@ -2,10 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 /* istanbul ignore next */
 export const GlobalStyle = createGlobalStyle`
   :root{
-    --primary-1: #A9CFFF;
-    --primary-2: #2B89BD;
-    --primary-3: #4AA4D6;
-    --primary-4: #277BAA;
+    --primary-1: #EC5938;
+    --primary-2: #FFCF26;
+    --primary-after-1: #f36a4c;
+
+    --secondary-1:#FFDBD2;
+    --secondary-2:#04B200;
+    --secondary-3:#FF0000;
+    --secondary-4:#EC5938;
+
+
+    --whileL: #F3F3F3;
+    --shadow: 0px 40px 70px 0px #EC5938;
+    --shadow2: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
     --white: #ffffff;
     --white-light: #f3f3f3;
     --light: #eaeaea;
@@ -16,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     --grey-dark: #929292;
     --grey-black: #424242;
     --black: #000000;
+
   }
 
  *,*::after, *::before {
@@ -23,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: 'Intel Clear', sans-serif;
+    font-family: 'Mulish', sans-serif;
 
   }
 
@@ -55,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     line-height: 1.3;
-    font-family: 'Intel Clear', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   #root {
@@ -65,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: 'Intel Clear', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   input, select, button {
@@ -83,217 +94,124 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   /* font family */
+  .heading_1 {
+    font-family: 'Mulish ExtraBold';
+    font-size: 64px;
+    line-height: 80.32px;
+  }
+  .heading_2 {
+    font-family: 'Mulish';
+    font-size: 64px;
+    line-height: 80.32px;
+  }
+  .heading_3 {
+    font-family: 'Mulish ExtraBold';
+    font-size: 48px;
+    line-height: 60.24px;
+  }
+  .heading_4 {
+    font-family: 'Mulish';
+    font-size: 48px;
+    line-height:60.24px;
+  }
+
   .title_1 {
-    font-family: 'Intel Clear Bold';
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 46.44px;
-    letter-spacing: 0.5px;
+    font-family: 'Mulish ExtraBold';
+    font-size: 32px;
+    line-height: 40.16px;
   }
-.title_2 {
-  font-family: 'Intel Clear Bold';
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 36.12px;
-   letter-spacing: 0.5px;
-}
-.title_3 {
-    font-family: 'Intel Clear Bold';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30.96px;
-    letter-spacing: 0.5px;
-}
-.title_4 {
-  font-family: 'Intel Clear Bold';
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.22px;
-   letter-spacing: 0.5px;
-}
-.title_5 {
-  font-family: 'Intel Clear Bold';
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20.64px;
-   letter-spacing: 0.5px;
-}
-.title_6 {
-  font-family: 'Intel Clear Bold';
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18.06px;
-   letter-spacing: 0.5px;
-}
-.title_7 {
-  font-family: 'Intel Clear Bold';
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15.48px;
-   letter-spacing: 0.5px;
-}
+  .title_2 {
+    font-family: 'Mulish SemiBold';
+    font-size: 32px;
+    line-height: 40.16px;
+  }
+  .title_3 {
+      font-family: 'Mulish';
+      font-size: 32px;
+      line-height: 40.16px;
+  }
 
-.body_1 {
-  font-family: 'Intel Clear';
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 31px;
-   letter-spacing: 0.5px;
-}
-.body_2 {
-  font-family: 'Intel Clear';
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 25.8px;
-   letter-spacing: 0.5px;
-}
-.body_3 {
-  font-family: 'Intel Clear';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.64px;
-   letter-spacing: 0.5px;
-}
-.body_4 {
-  font-family: 'Intel Clear';
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.06px;
-   letter-spacing: 0.5px;
-}
-.body_5 {
-  font-family: 'Intel Clear';
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.48px;
-   letter-spacing: 0.5px;
-}
-.body_6 {
-    font-family: 'Intel Clear';
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12.9px;
-    letter-spacing: 0.5px;
-}
-
-.mb-title_1 {
-   @media (max-width: 576px) {
-    font-family: 'Intel Clear Bold';
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 46.44px;
-    letter-spacing: 0.5px;
-   }
-}
-.mb-title_2 {
-   @media (max-width: 576px) {
-    font-family: 'Intel Clear Bold';
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 36.12px;
-    letter-spacing: 0.5px;
-   }
-}
-.mb-title_3 {
-   @media (max-width: 576px) {
-    font-family: 'Intel Clear Bold';
+  .subtitle_1 {
+    font-family: 'Mulish ExtraBold';
     font-size: 24px;
-    font-weight: 700;
-    line-height: 30.96px;
-    letter-spacing: 0.5px;
-   }
-}
-.mb-title_4 {
-   @media (max-width: 576px) {
-    font-family: 'Intel Clear Bold';
+    line-height: 30.12px;
+  }
+  .subtitle_2 {
+    font-family: 'Mulish SemiBold';
+    font-size: 24px;
+    line-height: 30.12px;
+  }
+  .subtitle_3 {
+    font-family: 'Mulish';
+    font-size: 24px;
+    line-height: 30.12px;
+  }
+
+  .body_1 {
+    font-family: 'Mulish ExtraBold';
     font-size: 18px;
-    font-weight: 700;
-    line-height: 23.22px;
-    letter-spacing: 0.5px;
-   }
-}
-.mb-title_5 {
-   @media (max-width: 576px) {
-    font-family: 'Intel Clear Bold';
+    line-height: 22.59px;
+  }
+  .body_2 {
+    font-family: 'Mulish SemiBold';
+    font-size: 18px;
+    line-height: 22.59px;
+  }
+  .body_3 {
+    font-family: 'Mulish';
+    font-size: 18px;
+    line-height: 22.59px;
+  }
+  .body_4 {
+    font-family: 'Mulish ExtraBold';
     font-size: 16px;
-    font-weight: 700;
-    line-height: 20.64px;
-    letter-spacing: 0.5px;
-   }
-}
-.mb-title_6 {
-    @media (max-width: 576px) {
-      font-family: 'Intel Clear Bold';
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 18.06px;
-      letter-spacing: 0.5px;
-    }
-}
-.mb-title_7 {
-    @media (max-width: 576px) {
-      font-family: 'Intel Clear Bold';
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 15.48px;
-      letter-spacing: 0.5px;
-    }
-}
-
-.mb-body_1 {
-  @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 31px;
-      letter-spacing: 0.5px;
+    line-height: 20.08px;
   }
-}
-.mb-body_2 {
-  @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 25.8px;
-      letter-spacing: 0.5px;
+  .body_5 {
+    font-family: 'Mulish SemiBold';
+    font-size: 16px;
+    line-height: 20.08px;
+  }
+  .body_6 {
+    font-family: 'Mulish';
+    font-size: 16px;
+    line-height: 20.08px;
   }
 
-}
-.mb-body_3 {
-   @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20.64px;
-      letter-spacing: 0.5px;
+  .small_1 {
+    font-family: 'Mulish ExtraBold';
+    font-size: 14px;
+    line-height: 17.57px;
   }
-}
-.mb-body_4 {
-   @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18.06px;
-      letter-spacing: 0.5px;
+  .small_2 {
+    font-family: 'Mulish SemiBold';
+    font-size: 14px;
+    line-height: 17.57px;
   }
-}
-.mb-body_5 {
-   @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 15.48px;
-      letter-spacing: 0.5px;
+  .small_3 {
+    font-family: 'Mulish';
+    font-size: 14px;
+    line-height: 17.57px;
   }
-}
-.mb-body_6 {
-   @media (max-width: 576px) {
-      font-family: 'Intel Clear';
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 12.9px;
-      letter-spacing: 0.5px;
+  .small_4 {
+    font-family: 'Mulish ExtraBold';
+    font-size: 12px;
+    line-height: 15.06px;
   }
-}
+  .small_5 {
+    font-family: 'Mulish SemiBold';
+    font-size: 12px;
+    line-height: 15.06px;
+  }
+  .small_6 {
+    font-family: 'Mulish';
+    font-size: 12px;
+    line-height: 15.06px;
+  }
+  .small_7 {
+    font-family: 'Mulish';
+    font-size: 10px;
+    line-height: 12.55px;
+  }
 
 `;

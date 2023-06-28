@@ -1,3 +1,7 @@
 {
-  "hello": "Xin Chào"
+  "Header": {
+    "introduce": "Giới thiệu",
+    "guide": "Hướng dẫn sử dụng",
+    "contact": "Liên lạc"
+  }
 }

@@ -29,8 +29,6 @@ module.exports = {
     { type: 'style', section: internalSection, hidden: false },
 
     { type: 'revert', section: internalSection, hidden: false },
-
-    { type: 'init', section: internalSection, hidden: false },
   ],
   skip: {
     changelog: true,

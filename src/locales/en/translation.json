@@ -1,3 +1,7 @@
 {
-  "hello": "Hello"
+  "Header": {
+    "introduce": "Introduce",
+    "guide": "Guide",
+    "contact": "Contact"
+  }
 }

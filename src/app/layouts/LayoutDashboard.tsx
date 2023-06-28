@@ -4,9 +4,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { media } from 'styles/media';
 
-type Props = {};
-
-const LayoutDashboard = (props: Props) => {
+const LayoutDashboard = () => {
   const { classes } = useStyle();
 
   return (
