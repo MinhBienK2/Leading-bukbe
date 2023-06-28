@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@pages/*": ["app/pages/*"],
+      "@helpers/*": ["helpers/*"],
+      "@store/*":["store/*"],
+      "@slice/*" : ["store/slice/*"],
+      "@utils/*" : ["utils/*"],
+      "@assets/*" : ["assets/*"],
+      "@icons/*" : ["assets/icons/*"],
+      "@images/*" : ["assets/images/*"],
+      "@shared/*" : ["app/shared/*"],
+      "@constants/*" : ["constants/*"],
+      "@media/*" : ["styles/media.ts"],
+    },
+  },
+  "include": ["src", "internals/startingTemplate/**/*"],
+  "ts-node": {
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noEmit": true,
+      "allowSyntheticDefaultImports": true
+    }
+  }
+}

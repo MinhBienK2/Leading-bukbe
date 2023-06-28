@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Intel Clear';
+  src: local('IntelClearRegular'), url('../assets/fonts/IntelClear_Rg.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Intel Clear Bold';
+  src: local('IntelClearBold'), url('../assets/fonts/IntelClear_Bd.ttf') format('truetype');
+  font-weight: 700;
+}
