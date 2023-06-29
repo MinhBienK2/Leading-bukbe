@@ -1,5 +1,4 @@
 import { Box, Center, Stack, createStyles } from '@mantine/core';
-import { images } from 'assets/images';
 import React from 'react';
 import { CardInfo1 } from './components/cardInfo1';
 import CardInfo2 from './components/CardInfo2';
@@ -7,6 +6,7 @@ import { CardInfo3 } from './components/cardInfo3';
 import CardInfo4 from './components/cardInfo4';
 import { CardInfo5 } from './components/cardInfo5';
 import { CardInfo6 } from './components/cardInfo6';
+import { images } from '@assets/images';
 
 interface InPropsStyle {}
 

@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "noImplicitAny": false,
     "target": "es5",
@@ -16,21 +17,7 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
-    "paths": {
-      "@app/*": ["app/*"],
-      "@pages/*": ["app/pages/*"],
-      "@helpers/*": ["helpers/*"],
-      "@store/*":["store/*"],
-      "@slice/*" : ["store/slice/*"],
-      "@utils/*" : ["utils/*"],
-      "@assets/*" : ["assets/*"],
-      "@icons/*" : ["assets/icons/*"],
-      "@images/*" : ["assets/images/*"],
-      "@shared/*" : ["app/shared/*"],
-      "@constants/*" : ["constants/*"],
-      "@media/*" : ["styles/media.ts"],
-    },
+    "baseUrl": "./src"
   },
   "include": ["src", "internals/startingTemplate/**/*"],
   "ts-node": {

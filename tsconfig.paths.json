@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@app/*": ["app/*"],
+      "@pages/*": ["app/pages/*"],
+      "@helpers/*": ["helpers/*"],
+      "@store/*": ["store/*"],
+      "@slice/*": ["store/slice/*"],
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
+      "@icons/*": ["assets/icons/*"],
+      "@images/*": ["assets/images/*"],
+      "@shared/*": ["app/shared/*"],
+      "@constants/*": ["constants/*"],
+      "@media/*": ["styles/media.ts"]
+    }
+  }
+}

@@ -31,9 +31,9 @@
   ],
   "scripts": {
     "// ---DEFAULT CRA---": "",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco  start",
+    "build": "craco  build",
+    "test": "craco  test",
     "// ---TEMPLATE---": "Scripts will be also in the template",
     "start:prod": "yarn run build && serve -s build",
     "test:generators": "ts-node ./internals/testing/generators/test-generators.ts",
@@ -90,6 +90,7 @@
     }
   },
   "dependencies": {
+    "@craco/craco": "7.1.0",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
     "@mantine/carousel": "6.0.13",
@@ -137,6 +138,7 @@
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.18.0",
     "chalk": "4.1.2",
+    "craco-alias": "3.0.1",
     "cross-env": "7.0.3",
     "devmoji": "2.3.0",
     "eslint-config-prettier": "8.5.0",

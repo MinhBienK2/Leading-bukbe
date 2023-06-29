@@ -1,8 +1,8 @@
-import { Box, Group, createStyles } from '@mantine/core';
-import { relative } from 'path';
 import React from 'react';
+import { createStyles } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
-import { media } from 'styles/media';
+
+import Header from '@app/components/Header';
 
 type Props = {};
 
@@ -11,6 +11,7 @@ const LayoutDashboard = (props: Props) => {
 
   return (
     <>
+      <Header />
       <Outlet />
     </>
   );
