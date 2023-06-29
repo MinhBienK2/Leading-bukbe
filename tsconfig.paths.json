@@ -12,7 +12,7 @@
       "@images/*": ["assets/images/*"],
       "@shared/*": ["app/shared/*"],
       "@constants/*": ["constants/*"],
-      "@media/*": ["styles/media.ts"]
+      "@media": ["styles/media"]
     }
   }
 }

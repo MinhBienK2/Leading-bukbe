@@ -10,7 +10,7 @@ export const translationsJson = {
   en: {
     translation: en,
   },
-  de: {
+  vi: {
     translation: vi,
   },
 };

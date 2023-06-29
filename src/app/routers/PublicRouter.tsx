@@ -1,10 +1,14 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import { selectIsLogin } from 'store/slice/user/selectors';
-// import { selectAuth } from 'store/slice/auth/selectors';
+import { Navigate, Outlet } from 'react-router-dom';
+
+import Header from '@app/components/Header';
 
 function PublicRouter() {
-  return <Outlet />;
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 }
 export default PublicRouter;

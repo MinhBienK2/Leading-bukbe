@@ -3,5 +3,47 @@
     "introduce": "Giới thiệu",
     "guide": "Hướng dẫn sử dụng",
     "contact": "Liên lạc"
+  },
+  "Introduce": {
+    "btnGOBurkbe": "Chuyển đến Bukbe",
+    "header": {
+      "title": "Bukbe kết nối và quản lý",
+      "text": "Kết nối bạn với cửa hàng nhỏ và quản lý cửa hàng một cách hiệu quả",
+      "btnStart": "Bắt đầu"
+    },
+    "body1": {
+      "card_1-1": "Chúng tôi cung cấp một hệ thống quản lý toàn diện giúp bạn kiểm soát và theo dõi hoạt động của cửa hàng.",
+      "card_1-2": "Giúp bạn tối ưu hóa quy trình làm việc, tăng cường năng suất và cải thiện trải nghiệm khách hàng.",
+      "card_2-1": "Giúp khách hàng đặt lịch trước thông qua ứng dụng, giúp tiết kiệm thời gian của cả khách hàng và nhân viên của bạn",
+      "card_2-2": "Khách hàng có thể dễ dàng chọn ngày, giờ và dịch vụ mà họ mong muốn, và họ sẽ nhận được xác nhận đặt lịch tức thì",
+      "card_3-1": "Chúng tôi giúp bạn quảng cáo cửa hàng của mình trên ứng dụng Bukbe mà không mất chi phí nào",
+      "card_3-2": "Giúp bạn thu hút nhiều khách hàng tiềm năng hơn và tăng cường sự hiện diện trực tuyến của bạn."
+    },
+    "body2": {
+      "title": "Tiện lợi và tiết kiệm thời gian",
+      "text": "Sử dụng ứng dụng đặt lịch, người dùng có thể dễ dàng chọn lịch hẹn phù hợp với thời gian rảnh rỗi của mình. Không cần gọi điện thoại hoặc đến trực tiếp cửa hàng để đặt lịch, người dùng có thể lựa chọn ngày, giờ và dịch vụ mong muốn chỉ bằng vài thao tác trên ứng dụng."
+    },
+    "body3": {
+      "title": "Quản lý hiệu quả",
+      "text": "Chúng tôi cung cấp một giao diện quản lý lịch hẹn dễ sử dụng để bạn có thể theo dõi và quản lý lịch trình của mình. Bạn có thể xem, chỉnh sửa và hủy bỏ lịch hẹn, đồng thời nhận được thông báo tự động khi có thay đổi."
+    },
+    "body4": {
+      "title": "Thống kê và báo cáo rõ ràng",
+      "text": " Ứng dụng cung cấp báo cáo và thống kê chi tiết về doanh thu, số lượng khách hàng, mô hình tiêu thụ và nhiều thông tin quan trọng khác. Điều này giúp bạn hiểu rõ hơn về hiệu suất kinh doanh và đưa ra các quyết định chiến lược dựa trên dữ liệu thống kê."
+    },
+    "contact": {
+      "name-placeholder": "Tên của bạn",
+      "email-placeholder": "Email của bạn",
+      "phone-number-placeholder": "Số điện thoại của bạn",
+      "message-placeholder": "Tin nhắn của bạn",
+      "btnSubmit": "Gửi"
+    },
+    "support": {
+      "title": "Quan tâm đến việc phát triển sự hiện diện trực tuyến của bạn?"
+    },
+    "footer": {
+      "company": "Company",
+      "address": ""
+    }
   }
 }

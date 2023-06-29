@@ -5,22 +5,23 @@ import React, { useRef } from 'react';
 import { images } from 'assets/images';
 import { sizes } from 'styles/media';
 import { ButtonIntro } from 'app/components/Button/ButtonIntro';
-import HeadernavMobile from 'app/components/HeadNavMenu/HeadernavMobile';
-import HeadNavMenu from 'app/components/HeadNavMenu/HeadNavMenu';
+import { useTranslation } from 'react-i18next';
 
 interface InPropsStyle {}
 export const HeaderIntro = () => {
+  const { t } = useTranslation();
+
   const { classes: c } = createStyleProps({});
-  const mobile = useMediaQuery(`(max-width:${sizes.small}px)`);
+  const mobile = useMediaQuery(`(max-width:${sizes[600]}px)`);
   const containerRef = useRef();
   const { ref, entry } = useIntersection({
     root: containerRef.current,
     threshold: 0.6,
   });
   console.log(mobile, 'thí í mobile');
+
   return (
     <Center className={c.boxHeader}>
-      {mobile ? <HeadernavMobile /> : <HeadNavMenu />}
       <Flex
         sx={{
           maxWidth: '100%',

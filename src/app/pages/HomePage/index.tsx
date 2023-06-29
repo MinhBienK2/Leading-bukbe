@@ -2,9 +2,7 @@ import { Center, createStyles } from '@mantine/core';
 import { images } from 'assets/images';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-// import { HeaderIntro } from './header/HeaderIntro';
-// import { BodyIntro } from './body/BodyIntro';
-// import { FooterIntro } from './footer/FooterIntro';
+
 import { HeaderIntro } from '@pages/HomePage/header/HeaderIntro';
 import { BodyIntro } from '@pages/HomePage/body/BodyIntro';
 import { FooterIntro } from '@pages/HomePage/footer/FooterIntro';

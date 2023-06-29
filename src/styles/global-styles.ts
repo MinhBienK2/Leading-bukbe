@@ -89,6 +89,10 @@ export const GlobalStyle = createGlobalStyle`
     cursor : pointer
   }
 
+  .transition-all {
+    transition : all 0.4s;
+  }
+
   .radius-8 {
     border-radius: 8px;
   }

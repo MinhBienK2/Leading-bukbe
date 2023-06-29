@@ -62,7 +62,7 @@ const ContentBox4 = () => {
                 transition: `all .3s 0.1s linear`,
                 transform: entry?.isIntersecting ? 'translateX(0px) scale(1.1)' : 'translateX(-50px)',
                 opacity: entry?.isIntersecting ? 1 : 0,
-                zIndex: 1111,
+                zIndex: 198,
                 willChange: 'auto',
                 alignItems: 'center',
               }}

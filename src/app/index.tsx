@@ -15,9 +15,9 @@ import { GlobalStyle } from 'styles/global-styles';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 import { useUserSlice } from 'store/slice/user';
-import LayoutDefault from './layouts/LayoutDashboard';
-import PublicRouter from './routers/PublicRouter';
-import { HomePage } from './pages/HomePage/Loadable';
+import LayoutDefault from './layouts/LayoutDefault';
+import PublicRouter from '@app/routers/PublicRouter';
+import { HomePage } from '@pages/HomePage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -33,6 +33,8 @@ export function App() {
         <Route path="/" element={<PublicRouter />}>
           <Route element={<LayoutDefault />}>
             <Route path="/" element={<HomePage />} />
+            <Route path="/guide" element={<div>guide</div>} />
+            <Route path="/contact" element={<div>contact</div>} />
           </Route>
         </Route>
 
