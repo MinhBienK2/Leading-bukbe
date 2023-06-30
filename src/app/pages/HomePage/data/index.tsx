@@ -1,26 +1,39 @@
-import { icons } from 'assets/icons';
+import react from 'react';
 import { images } from 'assets/images';
 
-export const dataCard = [
+import { ReactComponent as IconPage } from '@icons/card/page.svg';
+import { ReactComponent as IconDiamond } from '@icons/card/diamond.svg';
+import { ReactComponent as IconEye } from '@icons/card/eye.svg';
+import { icons } from '@assets/icons';
+
+export type TDataCard = {
+  id: number;
+  label: string;
+  icon: React.ReactNode;
+  subLabel: string;
+};
+
+export const dataCard: TDataCard[] = [
   {
     id: 0,
-    label: 'Chúng tôi cung cấp một hệ thống quản lý toàn diện giúp bạn kiểm soát và theo dõi hoạt động của cửa hàng.',
-    icon: `${icons.page}`,
-    subLabel: 'Giúp bạn tối ưu hóa quy trình làm việc, tăng cường năng suất và cải thiện trải nghiệm khách hàng.',
+    label: 'Introduce.body1.card_1-1',
+    icon: <IconPage />,
+    subLabel: 'Introduce.body1.card_1-2',
   },
   {
-    id: 1,
-    label: 'Giúp khách hàng đặt lịch trước thông qua ứng dụng, giúp tiết kiệm thời gian của cả khách hàng và nhân viên của bạn',
-    icon: `${icons.diamond}`,
-    subLabel: 'Khách hàng có thể dễ dàng chọn ngày, giờ và dịch vụ mà họ mong muốn, và họ sẽ nhận được xác nhận đặt lịch tức thì',
+    id: 0,
+    label: 'Introduce.body1.card_2-1',
+    icon: <IconDiamond />,
+    subLabel: 'Introduce.body1.card_2-2',
   },
   {
-    id: 2,
-    label: 'Chúng tôi giúp bạn quảng cáo cửa hàng của mình trên ứng dụng Bukbe mà không mất chi phí nào',
-    icon: `${icons.eye}`,
-    subLabel: 'Giúp bạn thu hút nhiều khách hàng tiềm năng hơn và tăng cường sự hiện diện trực tuyến của bạn.',
+    id: 0,
+    label: 'Introduce.body1.card_3-1',
+    icon: <IconEye />,
+    subLabel: 'Introduce.body1.card_3-2',
   },
 ];
+
 export const dataCard2 = [
   {
     id: 0,

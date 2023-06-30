@@ -27,8 +27,8 @@ const Header = (props: Props) => {
         <IconNavbar onClick={open} className={classes.iconNavbar} />
         <Logo onClick={() => navigation('/')} className={`transition-all cursor-pointer ${classes.logo}`} />
 
-        <Group noWrap spacing={40}>
-          <Group className={classes.listNavLink} position="apart" maw={446} w={'100%'} noWrap>
+        <Group noWrap spacing={40} className={classes.taskRight}>
+          <Group className={`${classes.listNavLink} ${classes.taskRight}`} position="apart" maw={446} w={'100%'} noWrap>
             <ListNavLink />
           </Group>
 
@@ -96,6 +96,12 @@ const useStyle = createStyles(() => ({
     display: 'none',
     [media.small]: {
       display: 'block',
+    },
+  },
+
+  taskRight: {
+    '@media (max-width:635px)': {
+      gap: 10,
     },
   },
 }));

@@ -2,7 +2,7 @@ import { Box, Center, Flex, Stack, Text, Transition, createStyles } from '@manti
 import { useIntersection } from '@mantine/hooks';
 import { images } from 'assets/images';
 import React, { memo, useCallback, useMemo, useRef } from 'react';
-import { dataCard2, dataCard3 } from './data';
+import { dataCard2, dataCard3 } from '../data';
 import { ButtonIntro } from 'app/components/Button/ButtonIntro';
 import { IsContent } from './IsContent';
 

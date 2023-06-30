@@ -3,7 +3,7 @@ import { css } from 'styled-components/macro';
 
 describe.skip('media', () => {
   it('should return media query in css', () => {
-    const mediaQuery = `${media.small()}{color:red;}`;
+    const mediaQuery = `${media.small}{color:red;}`;
     const cssVersion = css`
       @media (min-width: ${sizes.small}px) {
         color: red;

@@ -1,8 +1,8 @@
 import { Box, Center, Flex, Stack, Text } from '@mantine/core';
 import React from 'react';
-import { CardInfo6 } from '../body/components/cardInfo6';
+import { CardInfo6 } from '../body/cardInfo6';
 import { images } from 'assets/images';
-import { dataList } from '../body/components/data';
+import { dataList } from '../data';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from '@mantine/hooks';
 

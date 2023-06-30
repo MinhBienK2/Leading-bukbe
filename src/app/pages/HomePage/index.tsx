@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import { HeaderIntro } from '@pages/HomePage/header/HeaderIntro';
-import { BodyIntro } from '@pages/HomePage/body/BodyIntro';
+import { Body } from '@app/pages/HomePage/body';
 import { FooterIntro } from '@pages/HomePage/footer/FooterIntro';
 
 interface InPropsStyle {}
@@ -16,11 +16,10 @@ export function HomePage() {
         <title>Bukbe</title>
         <link rel="icon" href={`${images.logoBukbe}`} />
       </Helmet>
-      <Center className={c.BoxIntroduce}>
-        <HeaderIntro></HeaderIntro>
-        <BodyIntro></BodyIntro>
-        <FooterIntro></FooterIntro>
-      </Center>
+
+      <HeaderIntro></HeaderIntro>
+      <Body></Body>
+      {/* <FooterIntro></FooterIntro> */}
     </>
   );
 }
