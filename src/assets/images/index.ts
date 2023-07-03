@@ -13,5 +13,4 @@ export const images = {
   bgall: require('./background/bg2all.svg').default,
   // body 2
   phone55: require('./phone/phone5,5.svg').default,
-  phone6: require('./phone/phone6.svg').default,
 };

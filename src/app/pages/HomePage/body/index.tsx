@@ -3,9 +3,9 @@ import React from 'react';
 import { ListCard } from './ListCard';
 import Utilities from './Utilities';
 import EffectiveManagement from './EffectiveManagement';
-import CardInfo4 from './Statistical';
+import Statistical from './Statistical';
 import Contact from './Contact';
-import { CardInfo6 } from './cardInfo6';
+import Care from './Care';
 import { images } from '@assets/images';
 import media from '@media';
 
@@ -18,8 +18,9 @@ export const Body = () => {
       <ListCard></ListCard>
       <Utilities></Utilities>
       <EffectiveManagement></EffectiveManagement>
-      <CardInfo4></CardInfo4>
+      <Statistical></Statistical>
       <Contact></Contact>
+      <Care />
     </Stack>
   );
 };

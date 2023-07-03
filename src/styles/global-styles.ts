@@ -92,7 +92,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .transition-all {
-    transition : all 0.4s;
+    transition : all 0.3s linear;
   }
 
   .radius-8 {
