@@ -5,45 +5,45 @@
     "contact": "Contact"
   },
   "Introduce": {
-    "btnGOBurkbe": "Chuyển đến Bukbe",
+    "btnGOBurkbe": "Move to Bukbe",
     "header": {
-      "title": "Bukbe kết nối và quản lý",
-      "text": "Kết nối bạn với cửa hàng nhỏ và quản lý cửa hàng một cách hiệu quả",
-      "btnStart": "Bắt đầu"
+      "title": "connection and management",
+      "text": "Connecting you to your small store and managing it efficiently",
+      "btnStart": "Begin"
     },
     "body1": {
-      "card_1-1": "Chúng tôi cung cấp một hệ thống quản lý toàn diện giúp bạn kiểm soát và theo dõi hoạt động của cửa hàng.",
-      "card_1-2": "Giúp bạn tối ưu hóa quy trình làm việc, tăng cường năng suất và cải thiện trải nghiệm khách hàng.",
-      "card_2-1": "Giúp khách hàng đặt lịch trước thông qua ứng dụng, giúp tiết kiệm thời gian của cả khách hàng và nhân viên của bạn",
-      "card_2-2": "Khách hàng có thể dễ dàng chọn ngày, giờ và dịch vụ mà họ mong muốn, và họ sẽ nhận được xác nhận đặt lịch tức thì",
-      "card_3-1": "Chúng tôi giúp bạn quảng cáo cửa hàng của mình trên ứng dụng Bukbe mà không mất chi phí nào",
-      "card_3-2": "Giúp bạn thu hút nhiều khách hàng tiềm năng hơn và tăng cường sự hiện diện trực tuyến của bạn."
+      "card_1-1": "We offer a comprehensive management system that helps you control and track your store's operations.",
+      "card_1-2": "We help you optimize your workflow, increase productivity, and improve the customer experience.",
+      "card_2-1": "",
+      "card_2-2": "Customers can easily choose the date, time, and service they want, and they will receive instant confirmation of the booking.",
+      "card_3-1": "We help you advertise your store on the Bukbe app at no cost.",
+      "card_3-2": "We help you attract more potential customers and enhance your online presence."
     },
     "body2": {
-      "title": "Tiện lợi và tiết kiệm thời gian",
-      "text": "Sử dụng ứng dụng đặt lịch, người dùng có thể dễ dàng chọn lịch hẹn phù hợp với thời gian rảnh rỗi của mình. Không cần gọi điện thoại hoặc đến trực tiếp cửa hàng để đặt lịch, người dùng có thể lựa chọn ngày, giờ và dịch vụ mong muốn chỉ bằng vài thao tác trên ứng dụng."
+      "title": "Convenience and Time-saving",
+      "text": "By using the booking app, users can easily choose a suitable appointment time according to their availability. Without the need to call or visit the store to make an appointment, users can select their desired date, time, and service with just a few taps on the app."
     },
     "body3": {
-      "title": "Quản lý hiệu quả",
-      "text": "Chúng tôi cung cấp một giao diện quản lý lịch hẹn dễ sử dụng để bạn có thể theo dõi và quản lý lịch trình của mình. Bạn có thể xem, chỉnh sửa và hủy bỏ lịch hẹn, đồng thời nhận được thông báo tự động khi có thay đổi."
+      "title": "Efficient Management",
+      "text": "We provide a user-friendly appointment management interface for you to track and manage your schedule. You can view, edit, and cancel appointments, as well as receive automatic notifications of any changes."
     },
     "body4": {
-      "title": "Thống kê và báo cáo rõ ràng",
-      "text": " Ứng dụng cung cấp báo cáo và thống kê chi tiết về doanh thu, số lượng khách hàng, mô hình tiêu thụ và nhiều thông tin quan trọng khác. Điều này giúp bạn hiểu rõ hơn về hiệu suất kinh doanh và đưa ra các quyết định chiến lược dựa trên dữ liệu thống kê."
+      "title": "Clear Statistics and Reports",
+      "text": "The app provides detailed reports and statistics on revenue, customer numbers, consumption patterns, and other important information. This helps you better understand your business performance and make strategic decisions based on statistical data."
     },
     "contact": {
-      "name-placeholder": "Tên của bạn",
-      "email-placeholder": "Email của bạn",
-      "phone-number-placeholder": "Số điện thoại của bạn",
-      "message-placeholder": "Tin nhắn của bạn",
-      "btnSubmit": "Gửi"
+      "name-placeholder": "Your Name",
+      "email-placeholder": "Your Email",
+      "phone-number-placeholder": "Your Phone Number",
+      "message-placeholder": "Your Message",
+      "btnSubmit": "Submit"
     },
     "support": {
-      "title": "Quan tâm đến việc phát triển sự hiện diện trực tuyến của bạn?"
+      "title": "Interested in developing your online presence?"
     },
     "footer": {
       "company": "Company",
-      "address": "Company address: Lô 6 khu đô thị Nam Thanh, ngõ 1 đường Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
+      "address": "Company address: Lô 6 urban area Nam Thanh, alley 1 road Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
     }
   }
 }
