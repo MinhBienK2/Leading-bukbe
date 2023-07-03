@@ -7,7 +7,7 @@
   "Introduce": {
     "btnGOBurkbe": "Chuyển đến Bukbe",
     "header": {
-      "title": "Bukbe kết nối và quản lý",
+      "title": "kết nối và quản lý",
       "text": "Kết nối bạn với cửa hàng nhỏ và quản lý cửa hàng một cách hiệu quả",
       "btnStart": "Bắt đầu"
     },
@@ -32,6 +32,7 @@
       "text": " Ứng dụng cung cấp báo cáo và thống kê chi tiết về doanh thu, số lượng khách hàng, mô hình tiêu thụ và nhiều thông tin quan trọng khác. Điều này giúp bạn hiểu rõ hơn về hiệu suất kinh doanh và đưa ra các quyết định chiến lược dựa trên dữ liệu thống kê."
     },
     "contact": {
+      "title": "Liên hệ chúng tôi",
       "name-placeholder": "Tên của bạn",
       "email-placeholder": "Email của bạn",
       "phone-number-placeholder": "Số điện thoại của bạn",
@@ -43,7 +44,7 @@
     },
     "footer": {
       "company": "Company",
-      "address": ""
+      "address": "Địa chỉ công ty: Lô 6 khu đô thị Nam Thanh, ngõ 1 đường Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
     }
   }
 }

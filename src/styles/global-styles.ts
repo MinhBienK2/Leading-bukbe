@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import media from '@media';
+
 /* istanbul ignore next */
 export const GlobalStyle = createGlobalStyle`
   :root{
@@ -14,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
     --whileL: #F3F3F3;
     --shadow: 0px 40px 70px 0px #EC5938;
-    --shadow2: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    --shadow-black: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
     --white: #ffffff;
     --white-light: #f3f3f3;
@@ -90,7 +92,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .transition-all {
-    transition : all 0.4s;
+    transition : all 0.3s linear;
   }
 
   .radius-8 {
@@ -218,4 +220,170 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 12.55px;
   }
 
+  /* mobile */
+  .mb-heading_1 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 64px;
+      line-height: 80.32px;
+    }
+  }
+  .mb-heading_2 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 64px;
+      line-height: 80.32px;
+    }
+  }
+  .mb-heading_3 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 48px;
+      line-height: 60.24px;
+    }
+  }
+  .mb-heading_4 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 48px;
+      line-height:60.24px;
+    }
+  }
+
+  .mb-title_1 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 32px;
+      line-height: 40.16px;
+    }
+  }
+  .mb-title_2 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 32px;
+      line-height: 40.16px;
+    }
+  }
+  .mb-title_3 {
+    ${media.small} {
+        font-family: 'Mulish';
+        font-size: 32px;
+        line-height: 40.16px;
+      }
+  }
+
+  .mb-subtitle_1 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 24px;
+      line-height: 30.12px;
+    }
+  }
+  .mb-subtitle_2 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 24px;
+      line-height: 30.12px;
+    }
+  }
+  .mb-subtitle_3 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 24px;
+      line-height: 30.12px;
+    }
+  }
+
+  .mb-body_1 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 18px;
+      line-height: 22.59px;
+    }
+  }
+  .mb-body_2 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 18px;
+      line-height: 22.59px;
+    }
+  }
+  .mb-body_3 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 18px;
+      line-height: 22.59px;
+    }
+  }
+  .mb-body_4 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 16px;
+      line-height: 20.08px;
+    }
+  }
+  .mb-body_5 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 16px;
+      line-height: 20.08px;
+    }
+  }
+  .mb-body_6 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 16px;
+      line-height: 20.08px;
+    }
+  }
+
+  .mb-small_1 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 14px;
+      line-height: 17.57px;
+    }
+  }
+  .mb-small_2 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 14px;
+      line-height: 17.57px;
+    }
+  }
+  .mb-small_3 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 14px;
+      line-height: 17.57px;
+    }
+  }
+  .mb-small_4 {
+    ${media.small} {
+      font-family: 'Mulish ExtraBold';
+      font-size: 12px;
+      line-height: 15.06px;
+    }
+  }
+  .mb-small_5 {
+    ${media.small} {
+      font-family: 'Mulish SemiBold';
+      font-size: 12px;
+      line-height: 15.06px;
+    }
+  }
+  .mb-small_6 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 12px;
+      line-height: 15.06px;
+    }
+  }
+  .mb-small_7 {
+    ${media.small} {
+      font-family: 'Mulish';
+      font-size: 10px;
+      line-height: 12.55px;
+    }
+  }
 `;

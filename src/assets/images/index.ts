@@ -12,13 +12,5 @@ export const images = {
   bg6: require('./background/bgBody6/CTA.svg').default,
   bgall: require('./background/bg2all.svg').default,
   // body 2
-  phone1: require('./phone/phone1.svg').default,
-  phone2: require('./phone/phone2.svg').default,
-  phone3: require('./phone/phone3.svg').default,
-  phone4: require('./phone/phone4.svg').default,
-  phone5: require('./phone/phone5.svg').default,
   phone55: require('./phone/phone5,5.svg').default,
-  phone6: require('./phone/phone6.svg').default,
-  phone7: require('./phone/phone7.svg').default,
-  phone8: require('./phone/phone8.svg').default,
 };

@@ -1,156 +1,95 @@
-import { Box, Center, Flex, Stack, Text } from '@mantine/core';
+import { Box, Center, Divider, Flex, Group, Stack, Text, createStyles } from '@mantine/core';
 import React from 'react';
-import { CardInfo6 } from '../body/components/cardInfo6';
-import { images } from 'assets/images';
-import { dataList } from '../body/components/data';
+import { dataList } from '../data';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from '@mantine/hooks';
+import media from '@media';
+
+import { ReactComponent as Logo } from '@assets/logo/logoBukbe.svg';
+import { ReactComponent as IconC } from '@icons/homePage/c.svg';
+import { useTranslation } from 'react-i18next';
+import DropDraw from './DropDraw';
 
 export const FooterIntro = () => {
-  const small = useMediaQuery('(max-width:1280px)');
-  const nav = useNavigate();
-  const changeRoute = (v, i) => {
-    nav(v.ListLink[i]);
-  };
-  console.log(small, 'sáccs');
+  const { classes } = useStyle();
+  const { t } = useTranslation();
+  const navigation = useNavigate();
+
   return (
-    <Center
-      sx={{
-        width: '100vw',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Box
-        sx={{
-          width: '100%',
-        }}
-      >
-        <CardInfo6></CardInfo6>
-      </Box>
-      <Box
-        sx={{
-          width: '100%',
-          height: '60vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Flex
-          sx={{
-            maxWidth: small ? '1070px' : '1270px',
-            width: '100%',
-            height: '100%',
-            flexDirection: 'column',
-          }}
-        >
-          <Box
-            sx={{
-              width: '100%',
-              marginTop: '28px',
-            }}
-          >
-            <Box
-              sx={{
-                maxWidth: '156px',
-                width: '100%',
-                height: '39px',
-                background: `url(${images.logoBukbe})`,
-              }}
-            ></Box>
-          </Box>
-          <Box
-            sx={{
-              width: '100%',
-              height: '222px',
-              marginTop: '29px',
-              display: 'flex',
-              borderBottom: '1px solid var(--primary-1)',
-            }}
-          >
-            {dataList.map((v, ie) => {
-              const a = v.ListName;
-              const data = Object.values(a).map((v, i) => {
-                return v;
-              });
-              return (
-                <Stack
-                  key={ie}
-                  sx={{
-                    '& li': {
-                      textDecoration: 'none',
-                      listStyleType: 'none',
-                      fontSize: '16px',
-                      fontWeight: 600,
-                      marginRight: '200px',
-                    },
-                  }}
-                >
-                  <Text
-                    sx={{
-                      fontWeight: 800,
-                      fontSize: '24px',
-                      lineHeight: 1,
-                    }}
-                  >
-                    {v.menu}
-                  </Text>
-                  <ul>
-                    {data?.map((value, id) => {
-                      return (
-                        <li
-                          onMouseOver={e => (e.currentTarget.style.textDecoration = 'underline')}
-                          onMouseOut={e => (e.currentTarget.style.textDecoration = 'none')}
-                          key={id}
-                          onClick={() => changeRoute(v, id)}
-                        >
-                          <Text>{value}</Text>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </Stack>
-              );
-            })}
-          </Box>
-          <Box
-            sx={{
-              width: '100%',
-              height: '50%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-            }}
-          >
-            <Text
-              sx={{
-                fontSize: '16',
-                fontWeight: 600,
-              }}
-            >
-              Công ty TNHH VIETDEFI
-            </Text>
-            <Text
-              sx={{
-                fontSize: '16',
-                fontWeight: 600,
-              }}
-            >
-              Địa chỉ công ty: Lô 6 khu đô thị Nam Thanh, ngõ 1 đường Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội
-            </Text>
-            <Text
-              sx={{
-                fontSize: '16',
-                fontWeight: 600,
-              }}
-            >
-              © 2021 VIETDEFI
-            </Text>
-          </Box>
-        </Flex>
+    <Center className={classes.container}>
+      <Box className={classes.box}>
+        <Logo />
+
+        <Group mt={29} className={classes.group}>
+          <DropDraw width={149} title="Menu" heightSubMenu={76}>
+            <Text className="body_5">{t('Header.introduce')}</Text>
+            <Text className="body_5">{t('Header.guide')}</Text>
+            <Text className="body_5">{t('Header.contact')}</Text>
+          </DropDraw>
+          <DropDraw width={71} title="Social" heightSubMenu={20}>
+            <Text className="body_5">Telegram</Text>
+          </DropDraw>
+          <DropDraw width={260} title={t('Header.contact')} heightSubMenu={48}>
+            <Text className="body_5">Email: borostudio2018@gmail.com</Text>
+            <Text className="body_5">Hotline: 1800 0607</Text>
+          </DropDraw>
+        </Group>
+
+        <Divider color={'var(--primary-1)'} className={classes.divider} />
+
+        <Text className="body_5">{t('Introduce.footer.company')}</Text>
+        <Text className="body_5">{t('Introduce.footer.address')}</Text>
+        <Text mt={42} className="body_5">
+          <IconC />
+          2021 VIETDEFI
+        </Text>
       </Box>
     </Center>
   );
 };
+
+const useStyle = createStyles(() => ({
+  container: {
+    width: '100%',
+    height: 'calc(100vh - 100px)',
+    padding: '30px 16px',
+
+    [media[768]]: {
+      height: 'auto',
+    },
+    [media.small]: {
+      height: 'auto',
+    },
+  },
+
+  box: {
+    width: '100%',
+    maxWidth: 1170,
+    height: 475,
+    flexWrap: 'nowrap',
+
+    [media[768]]: {
+      flexDirection: 'column',
+      height: 'auto',
+    },
+  },
+
+  group: {
+    flexWrap: 'nowrap',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    [media.small]: {
+      flexWrap: 'wrap',
+      flexDirection: 'column',
+    },
+  },
+
+  divider: {
+    marginTop: 65,
+    marginBottom: 65,
+    [media.small]: {
+      marginTop: 16,
+      marginBottom: 16,
+    },
+  },
+}));
