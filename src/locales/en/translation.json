@@ -32,6 +32,7 @@
       "text": "The app provides detailed reports and statistics on revenue, customer numbers, consumption patterns, and other important information. This helps you better understand your business performance and make strategic decisions based on statistical data."
     },
     "contact": {
+      "title": "Contact us",
       "name-placeholder": "Your Name",
       "email-placeholder": "Your Email",
       "phone-number-placeholder": "Your Phone Number",
