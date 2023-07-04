@@ -3,6 +3,7 @@ import React from 'react';
 import { dataListNav } from './data';
 import { useTranslation } from 'react-i18next';
 import { NavLink, Outlet } from 'react-router-dom';
+import media from '@media';
 
 type Props = {};
 
@@ -49,6 +50,7 @@ const useStyle = createStyles(() => ({
     width: '100%',
     maxWidth: 1170,
     paddingTop: 40,
+    minHeight: 'calc(100vh - 130px)',
   },
 
   nav: {
@@ -59,6 +61,7 @@ const useStyle = createStyles(() => ({
     backfaceVisibility: 'hidden',
     height: 'calc(100vh - 150px)',
     borderRight: '8px solid var(--grey-light)',
+    zIndex: 9,
   },
 
   itemWrapper: {
@@ -71,5 +74,12 @@ const useStyle = createStyles(() => ({
   content: {
     marginLeft: 450,
     overflowY: 'scroll',
+    paddingLeft: 30,
+    paddingRight: 30,
+
+    [media[1184]]: {
+      paddingLeft: 16,
+      paddingRight: 16,
+    },
   },
 }));

@@ -1,11 +1,10 @@
 import { Center, createStyles } from '@mantine/core';
-import { images } from 'assets/images';
+import Logo from '@assets/logo/logoBukbe.svg';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import { HeaderIntro } from '@pages/HomePage/header/HeaderIntro';
 import { Body } from '@app/pages/HomePage/body';
-import { FooterIntro } from './Footer/FooterIntro';
 
 interface InPropsStyle {}
 export function HomePage() {
@@ -14,12 +13,11 @@ export function HomePage() {
     <>
       <Helmet>
         <title>Bukbe</title>
-        <link rel="icon" href={`${images.logoBukbe}`} />
+        <link rel="icon" href={`${Logo}`} />
       </Helmet>
 
       <HeaderIntro></HeaderIntro>
       <Body></Body>
-      <FooterIntro></FooterIntro>
     </>
   );
 }

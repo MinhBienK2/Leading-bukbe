@@ -1,6 +1,6 @@
 import { Box, Center, Divider, Flex, Group, Stack, Text, createStyles } from '@mantine/core';
 import React from 'react';
-import { dataList } from '../data';
+import { dataList } from '../../pages/HomePage/data';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from '@mantine/hooks';
 import media from '@media';
@@ -10,7 +10,7 @@ import { ReactComponent as IconC } from '@icons/homePage/c.svg';
 import { useTranslation } from 'react-i18next';
 import DropDraw from './DropDraw';
 
-export const FooterIntro = () => {
+export const Footer = () => {
   const { classes } = useStyle();
   const { t } = useTranslation();
   const navigation = useNavigate();
@@ -51,8 +51,8 @@ export const FooterIntro = () => {
 const useStyle = createStyles(() => ({
   container: {
     width: '100%',
-    height: 'calc(100vh - 100px)',
     padding: '30px 16px',
+    background: 'var(--white)',
 
     [media[768]]: {
       height: 'auto',
@@ -65,7 +65,6 @@ const useStyle = createStyles(() => ({
   box: {
     width: '100%',
     maxWidth: 1170,
-    height: 475,
     flexWrap: 'nowrap',
 
     [media[768]]: {

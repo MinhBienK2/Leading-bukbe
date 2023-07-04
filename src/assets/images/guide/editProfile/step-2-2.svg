@@ -1,8 +1,8 @@
 <svg width="185" height="375" viewBox="0 0 185 375" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="185" height="375" rx="16" fill="url(#pattern0)" />
+  <rect width="185" height="375" rx="16" fill="url(#edit-profile-step-2-2)" />
   <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="edit-profile-step-2-2" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_4014_54936" transform="scale(0.00227273 0.00112233)" />
     </pattern>
     <image id="image0_4014_54936" width="440" height="896"

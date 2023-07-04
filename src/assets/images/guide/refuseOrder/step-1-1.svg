@@ -1,8 +1,8 @@
 <svg width="190" height="375" viewBox="0 0 190 375" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="190" height="375" rx="16" fill="url(#pattern0)" />
+  <rect width="190" height="375" rx="16" fill="url(#refuse-order-1-1)" />
   <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="refuse-order-1-1" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_3983_54863"
         transform="matrix(0.00222717 0 0 0.00112843 0 -0.00158872)" />
     </pattern>

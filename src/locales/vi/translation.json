@@ -48,19 +48,19 @@
     }
   },
   "Guide": {
-    "title-1": "Hướng dẫn đăng ký tài khoản bukbe bằng Telegram",
-    "title-2": "Hướng dẫn đăng ký tài khoản bukbe bằng số điện thoại",
-    "title-3": "Hướng đăng nhập bằng số điện thoại",
-    "title-4": "Hướng dẫn đăng nhập vào bukbe bằng mã otp Telegram",
-    "title-5": "Hướng dẫn đặt lịch từ Bukbe shop ",
-    "title-6": "Hướng dẫn tạo thương hiệu  ",
-    "title-7": "Hướng dẫn tạo cửa hàng",
-    "title-8": "Hướng dẫn nhận đơn đặt và bắt đầu phục vụ từ người dùng",
-    "title-9": "Hướng dẫn từ chối đơn đặt",
-    "title-10": "Hướng thêm nhân viên vào cửa hàng",
-    "title-11": "Hướng dẫn tạo dịch vụ",
-    "title-12": "Hướng dẫn thêm ưu đãi cho dịch vụ",
-    "title-13": "Hướng dẫn sửa hồ sơ cửa hàng ",
+    "title-register-telegram": "Hướng dẫn đăng ký tài khoản bukbe bằng Telegram",
+    "title-register-phone": "Hướng dẫn đăng ký tài khoản bukbe bằng số điện thoại",
+    "title-login-phone": "Hướng đăng nhập bằng số điện thoại",
+    "title-login-telegram": "Hướng dẫn đăng nhập vào bukbe bằng mã otp Telegram",
+    "title-booking": "Hướng dẫn đặt lịch từ Bukbe shop ",
+    "title-branch": "Hướng dẫn tạo thương hiệu  ",
+    "title-store": "Hướng dẫn tạo cửa hàng",
+    "title-serve": "Hướng dẫn nhận đơn đặt và bắt đầu phục vụ từ người dùng",
+    "title-order": "Hướng dẫn từ chối đơn đặt",
+    "title-staff": "Hướng thêm nhân viên vào cửa hàng",
+    "title-services": "Hướng dẫn tạo dịch vụ",
+    "title-offers": "Hướng dẫn thêm ưu đãi cho dịch vụ",
+    "title-edit-profile": "Hướng dẫn sửa hồ sơ cửa hàng ",
     "registerTelegram": {
       "step_1-text-1": "Bước 1: ấn chọn vào",
       "step_1-text-2": "“Đăng ký & Đăng nhập bằng Telegram”",
@@ -161,7 +161,7 @@
       "step_1-text-2": "“Từ chối nhận”",
       "step_2-text-1": "Bước 2: Sau đó chọn lý do hủy lịch hoặc nhâp lý do để gửi tới khách hàng"
     },
-    "moreStaff": {
+    "moreStaffs": {
       "step_1-text-1": "Bước 1: Đầu tiên bạn nhấn và thanh Menu bên trên góc trái màn hình và chọn phần",
       "step_1-text-2": "“Tài khoản”",
       "step_1-text-3": "sau đó nhận tiếp chọn phần",

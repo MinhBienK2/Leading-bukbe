@@ -1,8 +1,9 @@
 <svg width="209" height="369" viewBox="0 0 209 369" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="209" height="369" rx="16" fill="url(#pattern0)" />
+  <rect width="209" height="369" rx="16" fill="url(#login-phone-number-2-3)" />
   <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="login-phone-number-2-3" patternContentUnits="objectBoundingBox" width="1"
+      height="1">
       <use xlink:href="#image0_3929_54553"
         transform="matrix(0.00201961 0 0 0.00114517 -0.000864395 -0.0162602)" />
     </pattern>

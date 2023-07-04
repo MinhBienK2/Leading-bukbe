@@ -1,8 +1,8 @@
 <svg width="193" height="375" viewBox="0 0 193 375" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect x="0.5" width="192" height="375" fill="url(#pattern0)" />
+  <rect x="0.5" width="192" height="375" fill="url(#register-telegram-2-1)" />
   <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="register-telegram-2-1" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_4037_55491"
         transform="matrix(0.0011919 0 0 0.000607533 -0.835519 -0.108141)" />
     </pattern>

@@ -19,6 +19,19 @@ import LayoutDefault from './layouts/LayoutDefault';
 import PublicRouter from '@app/routers/PublicRouter';
 import { HomePage } from '@pages/HomePage/Loadable';
 import Guide from './pages/Guide';
+import RegisterTelegram from './pages/Guide/RegisterTelegram';
+import RegisterPhoneNumber from './pages/Guide/RegisterPhoneNumber';
+import LoginPhoneNumber from './pages/Guide/LoginPhoneNumber';
+import LoginTelegram from './pages/Guide/LoginTelegram';
+import Booking from './pages/Guide/Booking';
+import CreateBranch from './pages/Guide/CreateBranch';
+import CreateStore from './pages/Guide/CreateStore';
+import Serve from './pages/Guide/Serve';
+import RefuseOrder from './pages/Guide/RefuseOrder';
+import MoreStaff from './pages/Guide/MoreStaff';
+import CreateService from './pages/Guide/CreateService';
+import MoreOffers from './pages/Guide/MoreOffers';
+import EditProfile from './pages/Guide/EditProfile';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -36,19 +49,19 @@ export function App() {
             <Route path="/" element={<HomePage />} />
 
             <Route path="/guide" element={<Guide />}>
-              <Route path="1" element={<div>Hello1</div>}></Route>
-              <Route path="2" element={<div>Hello2</div>}></Route>
-              <Route path="3" element={<div>Hello2</div>}></Route>
-              <Route path="4" element={<div>Hello3</div>}></Route>
-              <Route path="5" element={<div>Hello4</div>}></Route>
-              <Route path="6" element={<div>Hello5</div>}></Route>
-              <Route path="7" element={<div>Hell7o</div>}></Route>
-              <Route path="8" element={<div>Hel6lo</div>}></Route>
-              <Route path="9" element={<div>Hel9lo</div>}></Route>
-              <Route path="10" element={<div>He0llo</div>}></Route>
-              <Route path="11" element={<div>He-llo</div>}></Route>
-              <Route path="12" element={<div>Hel67lo</div>}></Route>
-              <Route path="13" element={<div>Hel56lo</div>}></Route>
+              <Route path="register-telegram" element={<RegisterTelegram />}></Route>
+              <Route path="register-phone" element={<RegisterPhoneNumber />}></Route>
+              <Route path="login-phone" element={<LoginPhoneNumber />}></Route>
+              <Route path="login-telegram" element={<LoginTelegram />}></Route>
+              <Route path="booking" element={<Booking />}></Route>
+              <Route path="branch" element={<CreateBranch />}></Route>
+              <Route path="store" element={<CreateStore />}></Route>
+              <Route path="serve" element={<Serve />}></Route>
+              <Route path="order" element={<RefuseOrder />}></Route>
+              <Route path="staff" element={<MoreStaff />}></Route>
+              <Route path="services" element={<CreateService />}></Route>
+              <Route path="offers" element={<MoreOffers />}></Route>
+              <Route path="edit-profile" element={<EditProfile />}></Route>
             </Route>
             <Route path="/contact" element={<div>contact</div>} />
           </Route>

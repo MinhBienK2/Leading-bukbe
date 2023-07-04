@@ -11,7 +11,6 @@ const ListNavLink = () => {
   return (
     <>
       {dataMenu.map(item => {
-        console.log(t(item.label));
         return (
           <NavLink to={item.path} key={item.id} style={{ textDecoration: 'none' }}>
             {({ isActive }) => (

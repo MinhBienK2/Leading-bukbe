@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 import Header from '@app/components/Header';
 import media from '@media';
+import { Footer } from '@app/components/Footer';
 
 type Props = {};
 
@@ -13,9 +14,12 @@ const LayoutDashboard = (props: Props) => {
   return (
     <>
       <Header />
+
       <Box className={classes.box}>
         <Outlet />
       </Box>
+
+      <Footer />
     </>
   );
 };

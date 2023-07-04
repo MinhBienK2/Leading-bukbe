@@ -92,11 +92,11 @@
     "loginPhoneNumber": {
       "step_1-text-1": "Step 1: Click on",
       "step_1-text-2": "“Register & Login with your phone number”",
-      "step_1-text-3": "",
-      "step_2-text-1": "to log in to your account.",
+      "step_1-text-3": "to log in to your account.",
+      "step_2-text-1": "Step 2: Then: enter",
       "step_2-text-2": "“Phone number”",
       "step_2-text-3": "that you have registered in the empty box enter the phone number on the screen, continue to enter",
-      "step_2-text-4": "““Password””",
+      "step_2-text-4": "“Password”",
       "step_2-text-5": "at least 8 characters that you have created, then choose",
       "step_2-text-6": "“/Login”",
       "step_2-text-7": "to login to your account your account."

@@ -1,8 +1,8 @@
 <svg width="192" height="375" viewBox="0 0 192 375" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect x="0.5" width="191" height="375" fill="url(#pattern0)" />
+  <rect x="0.5" width="191" height="375" fill="url(#more-staff-2-7)" />
   <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="more-staff-2-7" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_3991_55050" transform="scale(0.00221729 0.0011325)" />
     </pattern>
     <image id="image0_3991_55050" width="451" height="890"
