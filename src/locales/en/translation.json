@@ -45,5 +45,20 @@
       "company": "Company",
       "address": "Company address: Lô 6 urban area Nam Thanh, alley 1 road Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
     }
+  },
+  "Guide": {
+    "title-1": "Hướng dẫn đăng ký tài khoản bukbe bằng Telegram",
+    "title-2": "Hướng dẫn đăng ký tài khoản bukbe bằng số điện thoại",
+    "title-3": "Hướng đăng nhập bằng số điện thoại",
+    "title-4": "Hướng dẫn đăng nhập vào bukbe bằng mã otp Telegram",
+    "title-5": "Hướng dẫn đặt lịch từ Bukbe shop ",
+    "title-6": "Hướng dẫn tạo thương hiệu  ",
+    "title-7": "Hướng dẫn tạo cửa hàng",
+    "title-8": "Hướng dẫn nhận đơn đặt và bắt đầu phục vụ từ người dùng",
+    "title-9": "Hướng dẫn từ chối đơn đặt",
+    "title-10": "Hướng thêm nhân viên vào cửa hàng",
+    "title-11": "Hướng dẫn tạo dịch vụ",
+    "title-12": "Hướng dẫn thêm ưu đãi cho dịch vụ",
+    "title-13": "Hướng dẫn sửa hồ sơ cửa hàng "
   }
 }

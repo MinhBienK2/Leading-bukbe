@@ -1,6 +1,6 @@
-import { Center, Group, createStyles, Box, Stack, Text, List } from '@mantine/core';
+import { Center, createStyles, Box, List } from '@mantine/core';
 import React from 'react';
-import { dataListNav } from '../data';
+import { dataListNav } from './data';
 import { useTranslation } from 'react-i18next';
 import { NavLink, Outlet } from 'react-router-dom';
 
@@ -13,10 +13,10 @@ const Guide = (props: Props) => {
   return (
     <Center className={classes.container}>
       <Box className={classes.box}>
-        <List spacing={32} className={classes.nav}>
+        <List spacing={32} className={classes.nav} classNames={{ itemWrapper: classes.itemWrapper }}>
           {!!dataListNav.length &&
             dataListNav.map(nav => (
-              <NavLink to={nav.path}>
+              <NavLink key={nav.id} to={nav.path}>
                 {({ isActive }) => {
                   return (
                     <List.Item mt={20} c={isActive ? 'var(--primary-1)' : 'var(--black)'} className="subtitle_3" key={nav.id}>
@@ -27,6 +27,7 @@ const Guide = (props: Props) => {
               </NavLink>
             ))}
         </List>
+
         <Box className={classes.content}>
           <Outlet />
         </Box>
@@ -55,8 +56,16 @@ const useStyle = createStyles(() => ({
     maxWidth: 450,
     position: 'fixed',
     overflowY: 'scroll',
-    // -webkit-backface-visibility: hidden;
     backfaceVisibility: 'hidden',
+    height: 'calc(100vh - 150px)',
+    borderRight: '8px solid var(--grey-light)',
+  },
+
+  itemWrapper: {
+    width: 400,
+    '& span': {
+      width: 400,
+    },
   },
 
   content: {

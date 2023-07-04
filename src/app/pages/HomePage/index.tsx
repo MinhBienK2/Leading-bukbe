@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 import { HeaderIntro } from '@pages/HomePage/header/HeaderIntro';
 import { Body } from '@app/pages/HomePage/body';
-import { FooterIntro } from '@app/pages/HomePage/Footer/FooterIntro';
+import { FooterIntro } from '@app/pages/HomePage/footer/FooterIntro';
 
 interface InPropsStyle {}
 export function HomePage() {

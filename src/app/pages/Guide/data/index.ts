@@ -66,19 +66,4 @@ export const dataListNav: TDataListNav[] = [
     title: 'Guide.title-13',
     path: '/guide/13',
   },
-  {
-    id: 13,
-    title: 'Guide.title-13',
-    path: '/guide/13',
-  },
-  {
-    id: 13,
-    title: 'Guide.title-13',
-    path: '/guide/13',
-  },
-  {
-    id: 13,
-    title: 'Guide.title-13',
-    path: '/guide/13',
-  },
 ];
