@@ -2,21 +2,24 @@ import React, { useRef } from 'react';
 import { Box, Center, Flex, Group, Stack, Text, TextInput, Textarea, Transition, createStyles } from '@mantine/core';
 import { useIntersection } from '@mantine/hooks';
 import { useForm } from '@mantine/form';
-
-import { ButtonIntro } from 'app/components/Button/ButtonIntro';
 import { useTranslation } from 'react-i18next';
+
+import { useIntersect } from '@hook/useIntersect';
 import media from '@media';
+import { ButtonIntro } from 'app/components/Button/ButtonIntro';
 import { FilledButton } from '@app/components/Button/FilledButton';
+
+const buildThresholdArray = () => Array.from(Array(100).keys(), i => i / 100);
 
 const Contact = () => {
   const { t } = useTranslation();
   const { classes } = useStyle();
 
-  const containerRef = useRef();
-  const { ref, entry } = useIntersection({
-    root: containerRef.current,
-    threshold: 0.6,
+  const [ref, entry] = useIntersect({
+    threshold: buildThresholdArray(),
   });
+
+  console.log(entry?.intersectionRatio);
 
   const form = useForm({
     initialValues: {
@@ -35,7 +38,17 @@ const Contact = () => {
 
   return (
     <Center w={'100%'} px={16}>
-      <Stack w={'100%'} maw={1170} sx={{ gap: 65, [media.small]: { gap: 16 } }}>
+      <Stack
+        ref={ref}
+        w={'100%'}
+        maw={1170}
+        sx={{
+          gap: 65,
+          [media.small]: { gap: 16 },
+          transition: 'all 0.3s linear',
+          transform: entry?.intersectionRatio ? `translateY(0px)` : 'translateY(200px)',
+        }}
+      >
         <Text className="heading_3 subtitle_1">{t('Introduce.contact.title')}</Text>
 
         <Group className={classes.group}>
