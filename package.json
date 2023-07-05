@@ -32,8 +32,8 @@
   "scripts": {
     "// ---DEFAULT CRA---": "",
     "start": "craco  start",
-    "build": "craco  build",
-    "test": "craco  test",
+    "build": "react-scripts  build",
+    "test": "react-scripts  test",
     "// ---TEMPLATE---": "Scripts will be also in the template",
     "start:prod": "yarn run build && serve -s build",
     "test:generators": "ts-node ./internals/testing/generators/test-generators.ts",
