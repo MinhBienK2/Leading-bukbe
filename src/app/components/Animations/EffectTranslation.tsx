@@ -2,6 +2,7 @@ import { buildThresholdArray, useIntersect } from '@hook/useIntersect';
 import { Box, BoxProps, createStyles } from '@mantine/core';
 import React, { useMemo } from 'react';
 import { PolymorphicComponentProps } from '@mantine/utils';
+import media from '@media';
 
 interface Props extends PolymorphicComponentProps<'div', BoxProps> {
   children: React.ReactNode;
@@ -26,6 +27,10 @@ const EffectTranslation = ({ children, percent = 100, axis = 'Y', reverse = fals
         }px)`
       : `translate${axis}(${!reverse ? percent : -percent}px)`,
     opacity: entry?.intersectionRatio ? Number(entry.intersectionRatio) : 0,
+    [media[768]]: {
+      opacity: 1,
+      transform: 'none',
+    },
   };
 
   return (

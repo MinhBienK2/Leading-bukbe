@@ -18,7 +18,7 @@ import { useUserSlice } from 'store/slice/user';
 import LayoutDefault from './layouts/LayoutDefault';
 import PublicRouter from '@app/routers/PublicRouter';
 import { HomePage } from '@pages/HomePage/Loadable';
-import Guide from './pages/Guide';
+import { Guide } from './pages/Guide/Loadable';
 import RegisterTelegram from './pages/Guide/RegisterTelegram';
 import RegisterPhoneNumber from './pages/Guide/RegisterPhoneNumber';
 import LoginPhoneNumber from './pages/Guide/LoginPhoneNumber';
@@ -32,6 +32,7 @@ import MoreStaff from './pages/Guide/MoreStaff';
 import CreateService from './pages/Guide/CreateService';
 import MoreOffers from './pages/Guide/MoreOffers';
 import EditProfile from './pages/Guide/EditProfile';
+import LayoutGuide from './layouts/LayoutGuide';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -47,7 +48,10 @@ export function App() {
         <Route path="/" element={<PublicRouter />}>
           <Route element={<LayoutDefault />}>
             <Route path="/" element={<HomePage />} />
+            <Route path="/contact" element={<div>contact</div>} />
+          </Route>
 
+          <Route element={<LayoutGuide />}>
             <Route path="/guide" element={<Guide />}>
               <Route path="register-telegram" element={<RegisterTelegram />}></Route>
               <Route path="register-phone" element={<RegisterPhoneNumber />}></Route>

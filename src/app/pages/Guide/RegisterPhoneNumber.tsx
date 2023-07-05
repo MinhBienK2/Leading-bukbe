@@ -48,10 +48,6 @@ const RegisterPhoneNumber = () => {
           {t('Guide.registerPhoneNumber.step_2-text-8')}
         </Text>
         {t('Guide.registerPhoneNumber.step_2-text-9')}
-        <Text span className="body_4" c={'var(--primary-1)'}>
-          {t('Guide.registerPhoneNumber.step_2-text-10')}
-        </Text>
-        {t('Guide.registerPhoneNumber.step_2-text-11')}
       </Text>
 
       <Group position="center">
