@@ -5,9 +5,6 @@ import { selectIsLogin } from 'store/slice/user/selectors';
 
 function PrivateRouter() {
   const isLogin = useSelector(selectIsLogin);
-  console.log(isLogin);
-
-  // return isLogin ? <Outlet /> : <Navigate to="/login" />;
   return <Outlet />;
 }
 export default PrivateRouter;

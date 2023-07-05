@@ -12,7 +12,8 @@
       "@images/*": ["assets/images/*"],
       "@shared/*": ["app/shared/*"],
       "@constants/*": ["constants/*"],
-      "@media": ["styles/media"]
+      "@media": ["styles/media"],
+      "@hook/*": ["hook/*"]
     }
   }
 }

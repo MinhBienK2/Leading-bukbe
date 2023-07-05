@@ -1,5 +1,4 @@
 export const images = {
-  logoBukbe: require('./logoPage/logoBukbe.svg').default,
   backGroundHeader: require('./background/jusBG.svg').default,
   Jusphone: require('./background/bgJustPhone.svg').default,
   bgfullHeader: require('./background/BGheader2.svg').default,
@@ -11,6 +10,4 @@ export const images = {
   bg5: require('./background/bgBody5/bg5.svg').default,
   bg6: require('./background/bgBody6/CTA.svg').default,
   bgall: require('./background/bg2all.svg').default,
-  // body 2
-  phone55: require('./phone/phone5,5.svg').default,
 };

@@ -5,45 +5,219 @@
     "contact": "Contact"
   },
   "Introduce": {
-    "btnGOBurkbe": "Chuyển đến Bukbe",
+    "btnGOBurkbe": "Move to Bukbe",
     "header": {
-      "title": "Bukbe kết nối và quản lý",
-      "text": "Kết nối bạn với cửa hàng nhỏ và quản lý cửa hàng một cách hiệu quả",
-      "btnStart": "Bắt đầu"
+      "title": "connection and management",
+      "text": "Connecting you to your small store and managing it efficiently",
+      "btnStart": "Begin"
     },
     "body1": {
-      "card_1-1": "Chúng tôi cung cấp một hệ thống quản lý toàn diện giúp bạn kiểm soát và theo dõi hoạt động của cửa hàng.",
-      "card_1-2": "Giúp bạn tối ưu hóa quy trình làm việc, tăng cường năng suất và cải thiện trải nghiệm khách hàng.",
-      "card_2-1": "Giúp khách hàng đặt lịch trước thông qua ứng dụng, giúp tiết kiệm thời gian của cả khách hàng và nhân viên của bạn",
-      "card_2-2": "Khách hàng có thể dễ dàng chọn ngày, giờ và dịch vụ mà họ mong muốn, và họ sẽ nhận được xác nhận đặt lịch tức thì",
-      "card_3-1": "Chúng tôi giúp bạn quảng cáo cửa hàng của mình trên ứng dụng Bukbe mà không mất chi phí nào",
-      "card_3-2": "Giúp bạn thu hút nhiều khách hàng tiềm năng hơn và tăng cường sự hiện diện trực tuyến của bạn."
+      "card_1-1": "We offer a comprehensive management system that helps you control and track your store's operations.",
+      "card_1-2": "We help you optimize your workflow, increase productivity, and improve the customer experience.",
+      "card_2-1": "",
+      "card_2-2": "Customers can easily choose the date, time, and service they want, and they will receive instant confirmation of the booking.",
+      "card_3-1": "We help you advertise your store on the Bukbe app at no cost.",
+      "card_3-2": "We help you attract more potential customers and enhance your online presence."
     },
     "body2": {
-      "title": "Tiện lợi và tiết kiệm thời gian",
-      "text": "Sử dụng ứng dụng đặt lịch, người dùng có thể dễ dàng chọn lịch hẹn phù hợp với thời gian rảnh rỗi của mình. Không cần gọi điện thoại hoặc đến trực tiếp cửa hàng để đặt lịch, người dùng có thể lựa chọn ngày, giờ và dịch vụ mong muốn chỉ bằng vài thao tác trên ứng dụng."
+      "title": "Convenience and Time-saving",
+      "text": "By using the booking app, users can easily choose a suitable appointment time according to their availability. Without the need to call or visit the store to make an appointment, users can select their desired date, time, and service with just a few taps on the app."
     },
     "body3": {
-      "title": "Quản lý hiệu quả",
-      "text": "Chúng tôi cung cấp một giao diện quản lý lịch hẹn dễ sử dụng để bạn có thể theo dõi và quản lý lịch trình của mình. Bạn có thể xem, chỉnh sửa và hủy bỏ lịch hẹn, đồng thời nhận được thông báo tự động khi có thay đổi."
+      "title": "Efficient Management",
+      "text": "We provide a user-friendly appointment management interface for you to track and manage your schedule. You can view, edit, and cancel appointments, as well as receive automatic notifications of any changes."
     },
     "body4": {
-      "title": "Thống kê và báo cáo rõ ràng",
-      "text": " Ứng dụng cung cấp báo cáo và thống kê chi tiết về doanh thu, số lượng khách hàng, mô hình tiêu thụ và nhiều thông tin quan trọng khác. Điều này giúp bạn hiểu rõ hơn về hiệu suất kinh doanh và đưa ra các quyết định chiến lược dựa trên dữ liệu thống kê."
+      "title": "Clear Statistics and Reports",
+      "text": "The app provides detailed reports and statistics on revenue, customer numbers, consumption patterns, and other important information. This helps you better understand your business performance and make strategic decisions based on statistical data."
     },
     "contact": {
-      "name-placeholder": "Tên của bạn",
-      "email-placeholder": "Email của bạn",
-      "phone-number-placeholder": "Số điện thoại của bạn",
-      "message-placeholder": "Tin nhắn của bạn",
-      "btnSubmit": "Gửi"
+      "title": "Contact us",
+      "name-placeholder": "Your Name",
+      "email-placeholder": "Your Email",
+      "phone-number-placeholder": "Your Phone Number",
+      "message-placeholder": "Your Message",
+      "btnSubmit": "Submit"
     },
     "support": {
-      "title": "Quan tâm đến việc phát triển sự hiện diện trực tuyến của bạn?"
+      "title": "Interested in developing your online presence?"
     },
     "footer": {
       "company": "Company",
-      "address": "Company address: Lô 6 khu đô thị Nam Thanh, ngõ 1 đường Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
+      "address": "Company address: Lô 6 urban area Nam Thanh, alley 1 road Nguyễn Thị Duệ, Yên Hòa, Cầu Giấy, Hà Nội"
+    }
+  },
+  "Guide": {
+    "title-1": "Instructions for registering a bukbe account with Telegram",
+    "title-2": "Instructions to register a bukbe account by phone number",
+    "title-3": "Direction to login by phone number",
+    "title-4": "Instruction to login to bukbe with Telegram otp code",
+    "title-5": "How to book an appointment from Bukbe shop",
+    "title-6": "Branding Guide",
+    "title-7": "Shop Creation Guide",
+    "title-8": "Guide to receive orders and start serving from users",
+    "title-9": "Order Rejection Instructions",
+    "title-10": "Direct more employees to the store",
+    "title-11": "Service Creation Guide",
+    "title-12": "Instructions to add incentives to the service",
+    "title-13": "A Guide to Editing Store Profiles",
+    "registerTelegram": {
+      "step_1-text-1": "Step 1: Click on",
+      "step_1-text-2": "“Register & Login with Telegram”",
+      "step_1-text-3": "then click open Telegram",
+      "step_2-text-1": "Step 2: To register press",
+      "step_2-text-2": "“/START”",
+      "step_2-text-3": "then press",
+      "step_2-text-4": "“Share your phone number”",
+      "step_2-text-5": "after pressing share phone number is done and press select",
+      "step_2-text-6": "“/Login”",
+      "step_2-text-7": "you will get a link to redirect to the system. Or you can log in by going back to the login screen and selecting",
+      "step_2-text-8": "“Login with OTP”"
+    },
+    "registerPhoneNumber": {
+      "step_1-text-1": "Step 1: Click on",
+      "step_1-text-2": "“Register & Login with your phone number”",
+      "step_1-text-3": "then click open",
+      "step_1-text-4": "“Register”",
+      "step_1-text-5": "to create your account.",
+      "step_2-text-1": "Step 2: Then: enter",
+      "step_2-text-2": "“Phone number”",
+      "step_2-text-3": "Enter the phone number in the blank box on the screen, continue typing",
+      "step_2-text-4": "“Password”",
+      "step_2-text-5": "at least 8 characters, then",
+      "step_2-text-6": "“Enter the password”",
+      "step_2-text-7": "to confirm again to confirm whether it is correct or not, finally accept",
+      "step_2-text-8": "“Agree to terms of service and privacy policy”",
+      "step_2-text-9": "and select “Register” to create your account."
+    },
+    "loginPhoneNumber": {
+      "step_1-text-1": "Step 1: Click on",
+      "step_1-text-2": "“Register & Login with your phone number”",
+      "step_1-text-3": "to log in to your account.",
+      "step_2-text-1": "Step 2: Then: enter",
+      "step_2-text-2": "“Phone number”",
+      "step_2-text-3": "that you have registered in the empty box enter the phone number on the screen, continue to enter",
+      "step_2-text-4": "“Password”",
+      "step_2-text-5": "at least 8 characters that you have created, then choose",
+      "step_2-text-6": "“/Login”",
+      "step_2-text-7": "to login to your account your account."
+    },
+    "loginTelegram": {
+      "step_1-text-1": "Step 1: Click on",
+      "step_1-text-2": "“Login with OTP”",
+      "step_1-text-3": "to log in to your account.",
+      "step_2-text-1": "Step 2: Then enter",
+      "step_2-text-2": "“Phone number”",
+      "step_2-text-3": "that you have registered in the empty box enter the phone number on the screen, continue to press",
+      "step_2-text-4": "“Get OTP”",
+      "step_2-text-5": "để gửi mã OTP bao gồm 6 số đến tài khoản Telegram của bạn, sau đó nhập mã OTP đã được gửi đến Telegram vào ô trống trên màn hình để đăng nhập vào tài khoản của bạn."
+    },
+    "booking": {
+      "step_1-text-1": "Step 1: First you need to choose a store that you have the services you need and click it",
+      "step_2-text-1": "Step 2: Then you add all the services you want to your cart and press",
+      "step_2-text-2": "“Book”",
+      "step_3-text-1": "Step 3: First you need to choose",
+      "step_3-text-2": "“Day”",
+      "step_3-text-3": "and",
+      "step_3-text-4": "“Time”",
+      "step_3-text-5": "Start doing the service. If you want the service to be done at your home, click",
+      "step_3-text-6": "“Serve at home”",
+      "step_3-text-7": "and enter all the information contained therein and press",
+      "step_3-text-8": "“Continue”",
+      "step_4-text-1": "Step 4: continue to choose",
+      "step_4-text-2": "“Payment methods”",
+      "step_4-text-3": "and",
+      "step_4-text-4": "“Enter a note”",
+      "step_4-text-5": "If you have a message with the store"
+    },
+    "createBranch": {
+      "text": "First you need to register an account with Telegram, then you will need to log in for the first time to create your own brand. You need to enter all the information that is displayed on the screen to create your brand."
+    },
+    "createStore": {
+      "step_1-text-1": "Step 1: First you need to have your own brand. Then you click",
+      "step_1-text-2": "“Create Store”",
+      "step_1-text-3": "in the upper right corner of the screen.",
+      "step_2-text-1": "Step 2: Then you enter all the basic information of a store and press",
+      "step_2-text-2": "“Continue”",
+      "step_3-text-1": "Step 3: First you need to add",
+      "step_3-text-2": "“Cover image”",
+      "step_3-text-3": "and",
+      "step_3-text-4": "“Avatar”",
+      "step_3-text-5": ". Then add",
+      "step_3-text-6": "“About the store”",
+      "step_3-text-7": "yours and",
+      "step_3-text-8": "“Opening/closing time”",
+      "step_3-text-9": ".finally add a PR Image for the store and press",
+      "step_3-text-10": "“Confirm”",
+      "step_3-text-11": "Create a store and wait for the Admin to approve the store, then you can start a business"
+    },
+    "serve": {
+      "step_1-text-1": "Step 1: First you need to log in to the supplier page and then click on the order that the customer has placed and press",
+      "step_1-text-2": "“Receive orders”",
+      "step_2-text-1": "Step 2: Then the status of the order will change to waiting for the customer until the customer has come to the store and entered the shop, then click on the customer to come to catch the status of the order to change to working until the shop owner confirms it. complete and send a notification to the customer that the order is complete"
+    },
+    "refuseOrder": {
+      "step_1-text-1": "Step 1: First you need to log in to the supplier page and then click on the order that the customer has placed and press",
+      "step_1-text-2": "“Refuse to accept”",
+      "step_2-text-1": "Step 2: Then choose a reason for canceling the schedule or enter a reason to send it to the customer"
+    },
+    "moreStaff": {
+      "step_1-text-1": "Step 1: First you press and the Menu bar on the upper left corner of the screen and select the section",
+      "step_1-text-2": "“Account”",
+      "step_1-text-3": "then receive and choose the part",
+      "step_1-text-4": "“Human resource management”",
+      "step_2-text-1": "Step 2: Then click",
+      "step_2-text-2": "“More staff”",
+      "step_2-text-3": "In the left corner of the screen, next enter the employee's phone number to find the employee's information (note that the employee has registered a bukbe account on the staff page). After you have found the employee, click add, the system will fill in all the basic information and you just need to choose for that employee to serve which services in your store. If you want to consider that employee as a manager to support you, then click store manager or you want that employee to work at the store and work at home, then press the same button at the end.",
+      "step_2-text-4": "“Update”",
+      "step_2-text-5": "to complete add staff"
+    },
+    "createService": {
+      "step_1-text-1": "Step 1: First you press and the Menu bar on the upper left corner of the screen and select the section",
+      "step_1-text-2": "“Account”",
+      "step_1-text-3": "then receive and choose the part",
+      "step_1-text-4": "“Service”",
+      "step_2-text-1": "Step 2: Then click",
+      "step_2-text-2": "“More services”",
+      "step_2-text-3": "in the left corner of the screen, next select the service group that you store. continue typing",
+      "step_2-text-4": "“service name”",
+      "step_2-text-5": "next",
+      "step_2-text-6": "“Service Description”",
+      "step_2-text-7": "then",
+      "step_2-text-8": "“Service prices”",
+      "step_2-text-9": "and",
+      "step_2-text-10": "“Estimated time”",
+      "step_2-text-11": "finally more",
+      "step_2-text-12": "“Image”",
+      "step_2-text-13": "description of the service and confirmation that the service is available",
+      "step_2-text-14": "“Serve at home”",
+      "step_2-text-15": "or not and press",
+      "step_2-text-16": "“Create service”"
+    },
+    "moreOffers": {
+      "step_1-text-1": "Step 1: First you press and the Menu bar on the upper left corner of the screen and select the section",
+      "step_1-text-2": "“Account”",
+      "step_1-text-3": "then receive and choose the part",
+      "step_1-text-4": "“Service”",
+      "step_2-text-1": "Step 2: Then click",
+      "step_2-text-2": "“Three-dot icon”",
+      "step_2-text-3": "to the right of the screen service, then click",
+      "step_2-text-4": "“more offers”",
+      "step_2-text-5": ". Then we will enter the price in the discount box (note that the amount to be reduced must be less than the service increment), finally click",
+      "step_2-text-6": "“Apply”"
+    },
+    "editProfile": {
+      "step_1-text-1": "Step 1: First, you press and the Menu bar on the upper left corner of the screen and select the “Services” section",
+      "step_1-text-2": "“Account”",
+      "step_1-text-3": "then receive and choose the part",
+      "step_1-text-4": "“Product Profile”",
+      "step_2-text-1": "Step 2: You can change like “Change cover photo”, “Available photo”, store information like",
+      "step_2-text-2": "“Store Description”",
+      "step_2-text-3": "“Store phone number”",
+      "step_2-text-4": "“Opening/closing hours”",
+      "step_2-text-5": "“Store Address”",
+      "step_2-text-6": ". Or the store's PR images.",
+      "comma": ","
     }
   }
 }

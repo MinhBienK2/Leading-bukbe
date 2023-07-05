@@ -1,22 +1,15 @@
-import React, { useRef } from 'react';
-import { Box, Center, Flex, Group, Stack, Text, TextInput, Textarea, Transition, createStyles } from '@mantine/core';
-import { useIntersection } from '@mantine/hooks';
+import React, { useCallback, useMemo } from 'react';
+import { Center, Group, Stack, Text, TextInput, createStyles } from '@mantine/core';
 import { useForm } from '@mantine/form';
-
-import { ButtonIntro } from 'app/components/Button/ButtonIntro';
 import { useTranslation } from 'react-i18next';
-import media from '@media';
+
 import { FilledButton } from '@app/components/Button/FilledButton';
+import media from '@media';
+import EffectTranslation from '@app/components/Animations/EffectTranslation';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { classes } = useStyle();
-
-  const containerRef = useRef();
-  const { ref, entry } = useIntersection({
-    root: containerRef.current,
-    threshold: 0.6,
-  });
 
   const form = useForm({
     initialValues: {
@@ -35,39 +28,46 @@ const Contact = () => {
 
   return (
     <Center w={'100%'} px={16}>
-      <Stack w={'100%'} maw={1170} sx={{ gap: 65, [media.small]: { gap: 16 } }}>
-        <Text className="heading_3 subtitle_1">{t('Introduce.contact.title')}</Text>
+      <EffectTranslation w={'100%'} maw={1170}>
+        <Stack
+          sx={{
+            gap: 65,
+            [media.small]: { gap: 16 },
+          }}
+        >
+          <Text className="heading_3 subtitle_1">{t('Introduce.contact.title')}</Text>
 
-        <Group className={classes.group}>
-          <Stack className={classes.stack}>
-            <TextInput
-              placeholder={t('Introduce.contact.name-placeholder')}
-              type="text"
-              {...form.getInputProps('name')}
-              classNames={{ input: classes.input }}
-            ></TextInput>
-            <TextInput
-              placeholder={t('Introduce.contact.email-placeholder')}
-              type="email"
-              classNames={{ input: classes.input }}
-              {...form.getInputProps('email')}
-            ></TextInput>
-            <TextInput
-              placeholder={t('Introduce.contact.phone-number-placeholder')}
-              {...form.getInputProps('phone')}
-              type="number"
-              classNames={{ input: classes.input }}
-            ></TextInput>
-          </Stack>
-          <textarea name="message" placeholder={t('Introduce.contact.message-placeholder')} className={classes.textarea} />
-        </Group>
+          <Group className={classes.group}>
+            <Stack className={classes.stack}>
+              <TextInput
+                placeholder={t('Introduce.contact.name-placeholder')}
+                type="text"
+                {...form.getInputProps('name')}
+                classNames={{ input: classes.input }}
+              ></TextInput>
+              <TextInput
+                placeholder={t('Introduce.contact.email-placeholder')}
+                type="email"
+                classNames={{ input: classes.input }}
+                {...form.getInputProps('email')}
+              ></TextInput>
+              <TextInput
+                placeholder={t('Introduce.contact.phone-number-placeholder')}
+                {...form.getInputProps('phone')}
+                type="number"
+                classNames={{ input: classes.input }}
+              ></TextInput>
+            </Stack>
+            <textarea name="message" placeholder={t('Introduce.contact.message-placeholder')} className={classes.textarea} />
+          </Group>
 
-        <Center>
-          <FilledButton w={242} h={70} mb_h="40px" mb_w="122px">
-            {t('Introduce.contact.btnSubmit')}
-          </FilledButton>
-        </Center>
-      </Stack>
+          <Center>
+            <FilledButton type="submit" w={242} h={70} mb_h="40px" mb_w="122px">
+              {t('Introduce.contact.btnSubmit')}
+            </FilledButton>
+          </Center>
+        </Stack>
+      </EffectTranslation>
     </Center>
   );
 };

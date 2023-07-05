@@ -99,6 +99,7 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 8px;
   }
 
+
   /* font family */
   .heading_1 {
     font-family: 'Mulish ExtraBold';

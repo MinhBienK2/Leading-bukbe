@@ -6,27 +6,16 @@ import { images } from 'assets/images';
 import { useTranslation } from 'react-i18next';
 import media from '@media';
 import { FilledButton } from '@app/components/Button/FilledButton';
+import EffectTranslation from '@app/components/Animations/EffectTranslation';
 
 export const HeaderIntro = () => {
   const { t } = useTranslation();
 
   const { classes } = createStyleProps();
-  const containerRef = useRef();
-  const { ref, entry } = useIntersection({
-    root: containerRef.current,
-    threshold: 0.6,
-  });
 
   return (
     <Center className={classes.container}>
-      <Group
-        ref={ref}
-        sx={{
-          transform: entry?.isIntersecting ? 'translateY(0px)' : 'translateY(50px)',
-          opacity: entry?.isIntersecting ? 1 : 0,
-        }}
-        className={classes.group}
-      >
+      <EffectTranslation className={classes.group}>
         <Stack className={classes.stack}>
           <Text className="heading_3 mb-body_4" c={'var(--primary-1)'}>
             Bu
@@ -43,7 +32,7 @@ export const HeaderIntro = () => {
             {t('Introduce.header.btnStart')}
           </FilledButton>
         </Stack>
-      </Group>
+      </EffectTranslation>
     </Center>
   );
 };
@@ -76,8 +65,8 @@ const createStyleProps = createStyles(() => ({
   group: {
     maxWidth: 1170,
     width: '100%',
+    display: 'flex',
     flexWrap: 'nowrap',
-    transition: `all .4s 0.4s linear`,
     paddingRight: 16,
     paddingLeft: 16,
   },

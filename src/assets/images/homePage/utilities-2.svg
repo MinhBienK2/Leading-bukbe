@@ -1,7 +1,8 @@
 <svg width="177" height="330" viewBox="0 0 177 330" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <g filter="url(#filter0_d_3909_53902)">
-    <rect x="8" y="2" width="161" height="314" fill="url(#pattern0)" shape-rendering="crispEdges" />
+    <rect x="8" y="2" width="161" height="314" fill="url(#home-utilities-2)"
+      shape-rendering="crispEdges" />
   </g>
   <defs>
     <filter id="filter0_d_3909_53902" x="0" y="0" width="177" height="330"
@@ -17,7 +18,7 @@
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3909_53902" />
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3909_53902" result="shape" />
     </filter>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <pattern id="home-utilities-2" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_3909_53902"
         transform="matrix(0.00118765 0 0 0.000608643 -0.831354 -0.108338)" />
     </pattern>

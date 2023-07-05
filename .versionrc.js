@@ -39,6 +39,10 @@ module.exports = {
     { type: 'revert', section: 'Reverts', hidden: false },
 
     { type: 'build', section: 'Builds', hidden: false },
+
+    { type: 'translate', section: 'Translate', hidden: false, emoji: '💬', code: ':speech_balloon:' },
+
+    { type: 'init', section: 'Initial', hidden: false, emoji: ':tada:' },
   ],
   skip: {
     changelog: true,

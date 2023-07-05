@@ -2,8 +2,6 @@ import { Box, Center, Flex, Group, Stack, Text, createStyles } from '@mantine/co
 import { useIntersection, useMediaQuery, useWindowScroll } from '@mantine/hooks';
 import React, { memo, useCallback, useMemo, useRef } from 'react';
 
-import { dataCard2 } from '../data';
-import { IsContent } from './IsContent';
 import media from '@media';
 
 import { ReactComponent as ImagePhoneOne } from '@images/homePage/effective-1.svg';

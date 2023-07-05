@@ -1,8 +1,9 @@
-import { Box, Stack, Text, createStyles } from '@mantine/core';
-import { useIntersection } from '@mantine/hooks';
-import media from '@media';
 import React, { useRef } from 'react';
+import { Box, Stack, Text, createStyles } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
+
+import media from '@media';
+import EffectTranslation from '@app/components/Animations/EffectTranslation';
 
 type Props = {
   id: number;
@@ -12,24 +13,11 @@ type Props = {
 };
 
 const CardUtils = (props: Props) => {
-  const containerRef = useRef();
   const { t } = useTranslation();
   const { classes } = useStyle();
-  const { ref, entry } = useIntersection({
-    root: containerRef.current,
-    threshold: 0.6,
-  });
 
   return (
-    <Box
-      ref={ref}
-      sx={{
-        transition: `all .2s`,
-        transform: entry?.isIntersecting ? 'translateY(0px)' : 'translateY(50px)',
-        opacity: entry?.isIntersecting ? 1 : 0,
-      }}
-      className={classes.container}
-    >
+    <EffectTranslation className={classes.container}>
       <Stack spacing={16}>
         {props.icon}
 
@@ -38,7 +26,7 @@ const CardUtils = (props: Props) => {
           {t(props.subLabel)}
         </Text>
       </Stack>
-    </Box>
+    </EffectTranslation>
   );
 };
 
