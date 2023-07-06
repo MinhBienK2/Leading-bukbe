@@ -12,8 +12,7 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Bukbe</title>
-        <link rel="icon" href={`${Logo}`} />
+        <title>Home</title>
       </Helmet>
 
       <HeaderIntro></HeaderIntro>

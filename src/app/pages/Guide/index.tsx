@@ -6,6 +6,7 @@ import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import media from '@media';
 import BackPage from '@app/components/BackPage/BackPage';
 import { useMediaQuery } from '@mantine/hooks';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
@@ -23,35 +24,40 @@ const Guide = (props: Props) => {
   };
 
   return (
-    <Center className={classes.container}>
-      <Box className={classes.box}>
-        <ul className={classes.nav}>
-          {!!dataListNav.length &&
-            dataListNav.map(nav => (
-              <NavLink key={nav.id} to={nav.path}>
-                {({ isActive }) => {
-                  if (isActive) setActive(isActive);
+    <>
+      <Helmet>
+        <title>Guide</title>
+      </Helmet>
+      <Center className={classes.container}>
+        <Box className={classes.box}>
+          <ul className={classes.nav}>
+            {!!dataListNav.length &&
+              dataListNav.map(nav => (
+                <NavLink key={nav.id} to={nav.path}>
+                  {({ isActive }) => {
+                    if (isActive) setActive(isActive);
 
-                  return (
-                    <li
-                      style={{ color: isActive ? 'var(--primary-1)' : 'var(--black)' }}
-                      className={`subtitle_3 ${classes.itemWrapper}`}
-                      key={nav.id}
-                    >
-                      {t(nav.title)}
-                    </li>
-                  );
-                }}
-              </NavLink>
-            ))}
-        </ul>
-        <Box className={classes.content}>
-          {smallThan768 && <BackPage title={t('Header.guide')} onBackPage={moveToDefault} mb={26} />}
+                    return (
+                      <li
+                        style={{ color: isActive ? 'var(--primary-1)' : 'var(--black)' }}
+                        className={`subtitle_3 ${classes.itemWrapper}`}
+                        key={nav.id}
+                      >
+                        {t(nav.title)}
+                      </li>
+                    );
+                  }}
+                </NavLink>
+              ))}
+          </ul>
+          <Box className={classes.content}>
+            {smallThan768 && <BackPage title={t('Header.guide')} onBackPage={moveToDefault} mb={26} />}
 
-          <Outlet />
+            <Outlet />
+          </Box>
         </Box>
-      </Box>
-    </Center>
+      </Center>
+    </>
   );
 };
 
