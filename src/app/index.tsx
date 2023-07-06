@@ -33,10 +33,11 @@ import CreateService from './pages/Guide/CreateService';
 import MoreOffers from './pages/Guide/MoreOffers';
 import EditProfile from './pages/Guide/EditProfile';
 import LayoutGuide from './layouts/LayoutGuide';
+import { useSystemSlice } from '@store/slice/system';
 
 export function App() {
   const { i18n } = useTranslation();
-  useUserSlice();
+  useSystemSlice();
 
   return (
     <BrowserRouter>

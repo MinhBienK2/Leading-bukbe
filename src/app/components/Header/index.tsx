@@ -16,7 +16,6 @@ import { ReactComponent as Logo } from '@assets/logo/logoBukbe.svg';
 type Props = {};
 
 const Header = (props: Props) => {
-  const { t } = useTranslation();
   const { classes } = useStyle();
   const [opened, { open, close }] = useDisclosure(false);
   const navigation = useNavigate();

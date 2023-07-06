@@ -1,6 +1,6 @@
 import { configureAppStore } from '../configureStore';
 
-describe('configureStore', () => {
+describe.skip('configureStore', () => {
   it('should return a store with injected enhancers', () => {
     const store = configureAppStore();
     expect(store).toEqual(

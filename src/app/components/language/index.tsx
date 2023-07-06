@@ -11,8 +11,15 @@ type Props = {};
 const Language = (props: Props) => {
   const { classes } = useStyle();
 
-  const [getLabelLanguage, setLabelLanguage] = React.useState<string>(() => dataLanguage[0].label ?? '');
+  const [getLabelLanguage, setLabelLanguage] = React.useState<string>(() => {
+    for (let lang of dataLanguage) {
+      if (i18n.language === lang.key) return lang.label;
+    }
+    return dataLanguage[0].label;
+  });
   const [makeRoute, setMakeRoute] = React.useState(false);
+
+  console.log(i18n.language);
 
   const makeRotate = () => {
     setMakeRoute(!makeRoute);

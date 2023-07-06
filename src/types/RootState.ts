@@ -1,4 +1,5 @@
-import { User } from 'store/slice/user/types';
+import { System } from '@store/slice/system/types';
+import { User } from '@store/slice/user/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /*
@@ -9,4 +10,5 @@ import { User } from 'store/slice/user/types';
 */
 export interface RootState {
   user?: User;
+  system?: System;
 }
