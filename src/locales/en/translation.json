@@ -37,7 +37,11 @@
       "email-placeholder": "Your Email",
       "phone-number-placeholder": "Your Phone Number",
       "message-placeholder": "Your Message",
-      "btnSubmit": "Submit"
+      "btnSubmit": "Submit",
+      "successSended": "Submitted successfully!",
+      "textSended": "Thank you for contacting us",
+      "failSended": "Send failed !",
+      "failTextSended": "Something has gone wrong! please resend later ..."
     },
     "support": {
       "title": "Interested in developing your online presence?"

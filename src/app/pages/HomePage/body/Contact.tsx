@@ -1,30 +1,76 @@
-import React, { useCallback, useMemo } from 'react';
+import React from 'react';
 import { Center, Group, Stack, Text, TextInput, createStyles } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
+import { notifications } from '@mantine/notifications';
 
-import { FilledButton } from '@app/components/Button/FilledButton';
 import media from '@media';
+import { FilledButton } from '@app/components/Button/FilledButton';
 import EffectTranslation from '@app/components/Animations/EffectTranslation';
+
+import { ReactComponent as IconExclamationCircle } from '@icons/common/circle-check-filled.svg';
+import { ReactComponent as IconIconCheckFilled } from '@icons/common/circle-check-filled.svg';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { classes } = useStyle();
+  const [loading, setLoading] = React.useState<boolean>(false);
 
   const form = useForm({
     initialValues: {
-      name: '',
+      username: '',
       email: '',
-      yourmessage: '',
-      phone: '',
+      message: '',
+      phoneNumber: '',
     },
     validate: {
-      name: value => (value.length <= 0 ? 'Hãy nhập họ tên của bạn.' : ''),
+      username: value => (value.length <= 0 ? 'Hãy nhập họ tên của bạn.' : ''),
       email: value => (/^\S+@\S+$/.test(value) ? null : 'Nhập email của bạn.'),
-      yourmessage: value =>
+      message: value =>
         value.length <= 0 ? 'Hãy gửi lời nhắn tới chúng tôi, hoặc hãy để lại số điện thoại nếu bạn cần tư vấn trực tiếp.' : '',
     },
   });
+
+  const handleSubmit = event => {
+    setLoading(true);
+    event.preventDefault();
+
+    try {
+      emailjs
+        .send(
+          process.env.EMAILJS_YOUR_SERVICE_ID ?? '',
+          process.env.EMAILJS_YOUR_TEMPLATE_ID ?? '',
+          form.values,
+          process.env.EMAILJS_YOUR_PUBLIC_KEY ?? '',
+        )
+        .then(
+          result => {
+            console.log(result.text);
+            notifications.show({
+              title: t('Introduce.contact.successSended'),
+              message: t('Introduce.contact.textSended'),
+              color: 'green',
+              icon: <IconIconCheckFilled />,
+            });
+          },
+          error => {
+            console.log(error.text);
+            notifications.show({
+              title: t('Introduce.contact.failSended'),
+              message: t('Introduce.contact.failTextSended'),
+              color: 'red',
+              icon: <IconExclamationCircle />,
+            });
+          },
+        );
+
+      form.reset();
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Center w={'100%'} px={16}>
@@ -42,7 +88,7 @@ const Contact = () => {
               <TextInput
                 placeholder={t('Introduce.contact.name-placeholder')}
                 type="text"
-                {...form.getInputProps('name')}
+                {...form.getInputProps('username')}
                 classNames={{ input: classes.input }}
               ></TextInput>
               <TextInput
@@ -53,16 +99,23 @@ const Contact = () => {
               ></TextInput>
               <TextInput
                 placeholder={t('Introduce.contact.phone-number-placeholder')}
-                {...form.getInputProps('phone')}
+                {...form.getInputProps('phoneNumber')}
                 type="number"
                 classNames={{ input: classes.input }}
               ></TextInput>
             </Stack>
-            <textarea name="message" placeholder={t('Introduce.contact.message-placeholder')} className={classes.textarea} />
+            <textarea
+              name="message"
+              placeholder={t('Introduce.contact.message-placeholder')}
+              className={classes.textarea}
+              onChange={event => {
+                form.setFieldValue('message', event.target.value);
+              }}
+            />
           </Group>
 
           <Center>
-            <FilledButton type="submit" w={242} h={70} mb_h="40px" mb_w="122px">
+            <FilledButton loading={loading} onClick={event => handleSubmit(event)} w={242} h={70} mb_h="40px" mb_w="122px">
               {t('Introduce.contact.btnSubmit')}
             </FilledButton>
           </Center>
@@ -120,7 +173,6 @@ const useStyle = createStyles(() => ({
     },
     '&:focus': {
       border: '1px solid var(--primary-1)',
-      color: 'var(--primary-1)',
     },
     '&:focus::placeholder': {
       color: 'var(--primary-1)',
@@ -136,27 +188,25 @@ const useStyle = createStyles(() => ({
   textarea: {
     width: '100%',
     maxWidth: '50%',
-    height: '200px',
+    height: '225px',
     background: 'none',
     '&::placeholder': {
       color: '#929292',
       fontSize: '18px',
       fontWeight: 600,
     },
-    color: '#3d3737',
+
     fontSize: '18px',
     borderRadius: '50px',
-    fontWeight: 600,
-    paddingTop: '20px',
-    paddingLeft: '30px',
+    fontWeight: 400,
 
-    '&:focus': {
+    padding: '20px 30px',
+
+    '&:focus-visible': {
       border: '1px solid var(--primary-1)',
-      color: 'var(--primary-1)',
+      outline: 'none',
     },
-    '&:focus::placeholder': {
-      color: 'var(--primary-1)',
-    },
+
     '&:hover': {
       border: '1px solid var(--primary-1)',
     },

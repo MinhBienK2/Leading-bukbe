@@ -16,6 +16,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import reportWebVitals from 'reportWebVitals';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
+import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 
 // Use consistent styling
 import 'sanitize.css/sanitize.css';
@@ -46,11 +48,14 @@ root.render(
   <Provider store={store}>
     <HelmetProvider>
       <PersistGate loading={null} persistor={persistor}>
-        <ErrorBoundary>
-          <React.StrictMode>
-            <App />
-          </React.StrictMode>
-        </ErrorBoundary>
+        <MantineProvider>
+          <ErrorBoundary>
+            <React.StrictMode>
+              <Notifications />
+              <App />
+            </React.StrictMode>
+          </ErrorBoundary>
+        </MantineProvider>
       </PersistGate>
     </HelmetProvider>
   </Provider>,

@@ -37,7 +37,11 @@
       "email-placeholder": "Email của bạn",
       "phone-number-placeholder": "Số điện thoại của bạn",
       "message-placeholder": "Tin nhắn của bạn",
-      "btnSubmit": "Gửi"
+      "btnSubmit": "Gửi",
+      "successSended": "Gửi thành công !",
+      "textSended": "Cảm ơn bạn đã liên hệ với chúng tôi",
+      "failSended": "Gửi thất bại !",
+      "failTextSended": "Đã có sự cố xẩy ra mong! vui lòng gửi lại sau ..."
     },
     "support": {
       "title": "Quan tâm đến việc phát triển sự hiện diện trực tuyến của bạn?"

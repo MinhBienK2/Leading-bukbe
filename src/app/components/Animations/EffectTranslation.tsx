@@ -19,7 +19,7 @@ const EffectTranslation = ({ children, percent = 100, axis = 'Y', reverse = fals
   });
 
   const styleBox = {
-    transition: `all 0.4s linear 0s`,
+    transition: `transform 0.4s linear 0s, opacity 0.4s linear 0s `,
 
     transform: entry?.intersectionRatio
       ? `translate${axis}(${
