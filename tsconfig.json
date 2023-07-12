@@ -19,7 +19,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./src"
   },
-  "include": ["src", "internals/startingTemplate/**/*"],
+  "include": ["src", "internals/startingTemplate/**/*", "public/customServiceWorker.js"],
   "ts-node": {
     "compilerOptions": {
       "esModuleInterop": true,

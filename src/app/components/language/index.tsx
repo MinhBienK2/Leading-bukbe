@@ -19,8 +19,6 @@ const Language = (props: Props) => {
   });
   const [makeRoute, setMakeRoute] = React.useState(false);
 
-  console.log(i18n.language);
-
   const makeRotate = () => {
     setMakeRoute(!makeRoute);
   };

@@ -1,14 +1,13 @@
 import { Box, Center, Divider, Flex, Group, Stack, Text, createStyles } from '@mantine/core';
 import React from 'react';
-import { dataList } from '../../pages/HomePage/data';
 import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from '@mantine/hooks';
+import { useTranslation } from 'react-i18next';
+
 import media from '@media';
+import DropDraw from './DropDraw';
 
 import { ReactComponent as Logo } from '@assets/logo/logoBukbe.svg';
 import { ReactComponent as IconC } from '@icons/homePage/c.svg';
-import { useTranslation } from 'react-i18next';
-import DropDraw from './DropDraw';
 
 export const Footer = () => {
   const { classes } = useStyle();

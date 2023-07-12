@@ -25,6 +25,7 @@ import 'sanitize.css/sanitize.css';
 import { App } from 'app';
 import { configureAppStore } from 'store/configureStore';
 import { ErrorBoundary } from 'app/shared/ErrorBoudary';
+import * as serviceWorker from './serviceWorker';
 
 // Initialize languages
 import './locales/i18n';
@@ -60,6 +61,8 @@ root.render(
     </HelmetProvider>
   </Provider>,
 );
+
+// serviceWorker.register({ scope: '/' });
 
 // Hot reloadable translation json files
 if (module.hot) {

@@ -34,6 +34,7 @@ import MoreOffers from './pages/Guide/MoreOffers';
 import EditProfile from './pages/Guide/EditProfile';
 import LayoutGuide from './layouts/LayoutGuide';
 import { useSystemSlice } from '@store/slice/system';
+import Contact from './pages/Contact';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -49,7 +50,7 @@ export function App() {
         <Route path="/" element={<PublicRouter />}>
           <Route element={<LayoutDefault />}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/contact" element={<div>contact</div>} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
 
           <Route element={<LayoutGuide />}>
